@@ -1,0 +1,28 @@
+{
+  "predefined_formula_found": false,
+  "prototype": true,
+  "scale": "0-100",
+  "formula": "BTIS = 0.40 * healing_component + 0.40 * infection_component + 0.20 * tissue_component",
+  "component_formulas": {
+    "healing_component": "100 * P(Not Healed)",
+    "infection_component": "100 * (0.0 * P(Low) + 0.5 * P(Medium) + 1.0 * P(High))",
+    "tissue_component": "50 * (mean_abs_handcrafted_healing_SHAP/max_test_mean_abs_handcrafted_healing_SHAP + mean_abs_handcrafted_infection_SHAP/max_test_mean_abs_handcrafted_infection_SHAP)"
+  },
+  "weights": {
+    "healing": 0.4,
+    "infection": 0.4,
+    "tissue": 0.2
+  },
+  "test_samples": 137,
+  "btis_min": 10.564849518236139,
+  "btis_max": 74.97795482687856,
+  "btis_mean": 33.075718525623486,
+  "btis_median": 27.576110763651627,
+  "limitations": [
+    "Prototype engineering score; not clinically validated.",
+    "Infection component preserves Low, Medium, and High probabilities but uses prototype ordinal weights.",
+    "The infection model has High-risk F1 and recall of 0.0; high-risk BTIS interpretation is unreliable.",
+    "SurgWound Healing Status is an image-level label, not longitudinal healing evidence.",
+    "No clinical thresholds or prevalence claims are assigned."
+  ]
+}

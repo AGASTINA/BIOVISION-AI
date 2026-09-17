@@ -1,0 +1,687 @@
+filename,healing_outcome,infection_status,split
+0.jpg,Not Healed,Medium,train
+1.jpg,Healed,Low,validation
+10.jpg,Healed,Low,train
+100.jpg,Healed,Low,test
+1000.jpg,Not Healed,Low,train
+1001.jpg,Healed,Low,train
+1002.jpg,Not Healed,Low,train
+1005.jpg,Healed,Low,validation
+1007.jpg,Healed,Low,train
+1008.jpg,Healed,Low,train
+1009.jpg,Healed,Low,train
+101.jpg,Healed,Low,train
+102.jpg,Healed,Low,train
+103.jpg,Healed,Low,train
+104.jpg,Healed,Low,test
+105.jpg,Healed,Low,train
+106.jpg,Healed,Low,train
+107.jpg,Healed,Low,train
+108.jpg,Healed,Low,train
+109.jpg,Healed,Low,train
+11.jpg,Healed,Low,train
+110.jpg,Healed,Low,test
+111.jpg,Not Healed,High,test
+112.jpg,Healed,Low,validation
+116.jpg,Not Healed,Medium,train
+117.jpg,Healed,Low,train
+118.jpg,Healed,Low,train
+119.jpg,Not Healed,Low,test
+12.jpg,Not Healed,Medium,validation
+120.jpg,Healed,Low,train
+121.jpg,Not Healed,Low,train
+122.jpg,Healed,Low,train
+123.jpg,Healed,Low,train
+124.jpg,Not Healed,Medium,test
+125.jpg,Healed,Low,test
+126.jpg,Healed,Low,train
+128.jpg,Healed,Low,train
+129.jpg,Healed,Low,train
+13.jpg,Healed,Low,test
+130.jpg,Healed,Low,train
+131.jpg,Healed,Low,train
+132.jpg,Not Healed,Medium,train
+133.jpg,Healed,Low,train
+134.jpg,Healed,Low,test
+135.jpg,Healed,Low,train
+136.jpg,Healed,Low,train
+137.jpg,Healed,Low,train
+138.jpg,Healed,Low,train
+139.jpg,Healed,Low,test
+14.jpg,Healed,Low,train
+140.jpg,Not Healed,High,validation
+141.jpg,Not Healed,Low,train
+143.jpg,Healed,Low,test
+144.jpg,Not Healed,High,train
+145.jpg,Not Healed,Medium,train
+146.jpg,Not Healed,Medium,test
+147.jpg,Healed,Low,train
+149.jpg,Not Healed,Medium,validation
+15.jpg,Healed,Low,test
+150.jpg,Not Healed,Medium,train
+151.jpg,Healed,Low,train
+152.jpg,Healed,Low,train
+153.jpg,Not Healed,Low,train
+154.jpg,Healed,Low,train
+155.jpg,Not Healed,Medium,test
+156.jpg,Healed,Low,train
+157.jpg,Not Healed,Medium,validation
+158.jpg,Not Healed,High,train
+159.jpg,Not Healed,Medium,train
+16.jpg,Healed,Low,train
+160.jpg,Healed,Low,train
+161.jpg,Healed,Low,train
+163.jpg,Healed,Low,validation
+164.jpg,Not Healed,Medium,train
+165.jpg,Healed,Low,train
+166.jpg,Not Healed,Low,train
+167.jpg,Healed,Low,train
+169.jpg,Not Healed,Low,train
+17.jpg,Healed,Low,train
+170.jpg,Healed,Low,train
+171.jpg,Not Healed,Medium,train
+172.jpg,Not Healed,Low,train
+174.jpg,Not Healed,Medium,train
+175.jpg,Healed,Low,train
+176.jpg,Healed,Low,train
+178.jpg,Not Healed,Low,test
+18.jpg,Healed,Low,train
+180.jpg,Healed,Low,test
+183.jpg,Not Healed,Low,validation
+184.jpg,Not Healed,Low,train
+186.jpg,Healed,Low,train
+187.jpg,Healed,Low,train
+19.jpg,Healed,Low,train
+190.jpg,Not Healed,Medium,validation
+191.jpg,Healed,Low,train
+192.jpg,Not Healed,Low,train
+193.jpg,Healed,Low,test
+194.jpg,Not Healed,Low,test
+195.jpg,Healed,Low,train
+197.jpg,Not Healed,Medium,train
+199.jpg,Not Healed,Low,train
+2.jpg,Not Healed,Medium,train
+20.jpg,Healed,Low,validation
+200.jpg,Not Healed,Low,train
+202.jpg,Not Healed,Low,train
+206.jpg,Healed,Low,validation
+207.jpg,Healed,Medium,validation
+208.jpg,Healed,Low,train
+209.jpg,Healed,Low,test
+21.jpg,Healed,Low,train
+210.jpg,Healed,Low,train
+211.jpg,Not Healed,Low,train
+214.jpg,Not Healed,Low,test
+215.jpg,Not Healed,Medium,train
+216.jpg,Not Healed,Low,validation
+217.jpg,Not Healed,Low,train
+22.jpg,Healed,Low,test
+221.jpg,Not Healed,Low,train
+223.jpg,Healed,Low,train
+226.jpg,Healed,Low,train
+227.jpg,Healed,Low,train
+230.jpg,Healed,Low,train
+233.jpg,Not Healed,Low,train
+237.jpg,Not Healed,Low,test
+238.jpg,Healed,Low,train
+24.jpg,Healed,Low,train
+240.jpg,Healed,Low,test
+241.jpg,Healed,Low,train
+245.jpg,Not Healed,Low,train
+247.jpg,Not Healed,Medium,train
+25.jpg,Not Healed,Medium,test
+250.jpg,Healed,Low,train
+253.jpg,Not Healed,Low,test
+255.jpg,Not Healed,Low,train
+257.jpg,Not Healed,Low,test
+258.jpg,Healed,Low,train
+259.jpg,Healed,Low,train
+26.jpg,Healed,Low,train
+260.jpg,Healed,Low,train
+264.jpg,Healed,Low,train
+265.jpg,Not Healed,Low,test
+266.jpg,Healed,Low,train
+267.jpg,Not Healed,Low,test
+268.jpg,Not Healed,Low,test
+269.jpg,Healed,Low,train
+271.jpg,Not Healed,High,train
+274.jpg,Healed,Low,train
+275.jpg,Healed,Low,train
+276.jpg,Healed,Low,test
+277.jpg,Healed,Low,train
+278.jpg,Not Healed,Low,train
+279.jpg,Not Healed,Low,train
+280.jpg,Not Healed,Low,train
+282.jpg,Not Healed,Medium,test
+284.jpg,Healed,Low,validation
+285.jpg,Not Healed,Low,train
+286.jpg,Healed,Low,train
+287.jpg,Healed,Low,validation
+288.jpg,Healed,Low,train
+29.jpg,Healed,Low,train
+290.jpg,Healed,Low,train
+291.jpg,Healed,Low,test
+292.jpg,Not Healed,Low,train
+293.jpg,Healed,Low,train
+294.jpg,Healed,Low,train
+295.jpg,Healed,Low,train
+296.jpg,Healed,Low,train
+299.jpg,Healed,Low,test
+3.jpg,Not Healed,Medium,test
+30.jpg,Healed,Low,test
+302.jpg,Healed,Low,validation
+303.jpg,Healed,Low,train
+305.jpg,Not Healed,Medium,train
+308.jpg,Healed,Medium,train
+309.jpg,Not Healed,Low,train
+31.jpg,Healed,Low,test
+310.jpg,Healed,Low,train
+311.jpg,Healed,Low,test
+312.jpg,Not Healed,Low,train
+313.jpg,Healed,Low,train
+314.jpg,Not Healed,Low,validation
+315.jpg,Not Healed,Low,test
+316.jpg,Healed,Low,train
+317.jpg,Not Healed,Low,train
+318.jpg,Healed,Low,train
+32.jpg,Healed,Low,train
+320.jpg,Not Healed,Medium,validation
+322.jpg,Healed,Low,train
+323.jpg,Healed,Low,train
+325.jpg,Healed,Medium,train
+33.jpg,Healed,Low,train
+331.jpg,Not Healed,Low,train
+334.jpg,Healed,Low,test
+336.jpg,Healed,Low,train
+337.jpg,Not Healed,Medium,train
+338.jpg,Healed,Low,train
+339.jpg,Not Healed,Low,train
+34.jpg,Healed,Low,train
+342.jpg,Healed,Low,validation
+345.jpg,Not Healed,Low,train
+347.jpg,Not Healed,Low,train
+35.jpg,Healed,Low,train
+352.jpg,Not Healed,Medium,train
+355.jpg,Healed,Low,train
+356.jpg,Healed,Low,train
+357.jpg,Healed,Low,train
+359.jpg,Healed,Low,train
+36.jpg,Healed,Low,train
+360.jpg,Not Healed,High,train
+361.jpg,Healed,Low,train
+363.jpg,Not Healed,High,train
+365.jpg,Healed,Low,train
+366.jpg,Not Healed,Low,train
+37.jpg,Healed,Low,train
+370.jpg,Healed,Low,train
+372.jpg,Healed,Low,test
+374.jpg,Not Healed,Low,train
+375.jpg,Not Healed,Low,train
+377.jpg,Healed,Low,test
+378.jpg,Not Healed,Medium,validation
+379.jpg,Healed,Low,validation
+38.jpg,Not Healed,Medium,train
+382.jpg,Healed,Low,test
+385.jpg,Healed,Low,test
+386.jpg,Not Healed,Medium,train
+387.jpg,Not Healed,Low,validation
+389.jpg,Healed,Low,train
+39.jpg,Healed,Low,train
+392.jpg,Healed,Low,test
+394.jpg,Healed,Low,train
+396.jpg,Healed,Low,test
+398.jpg,Not Healed,Low,train
+399.jpg,Healed,Low,train
+400.jpg,Not Healed,Low,train
+401.jpg,Not Healed,Low,train
+402.jpg,Healed,Low,validation
+403.jpg,Not Healed,Low,train
+404.jpg,Healed,Low,validation
+405.jpg,Healed,Low,test
+406.jpg,Not Healed,Medium,train
+407.jpg,Healed,Low,train
+408.jpg,Not Healed,Low,train
+41.jpg,Healed,Low,test
+410.jpg,Not Healed,Low,train
+411.jpg,Healed,Low,test
+412.jpg,Healed,Low,train
+415.jpg,Healed,Low,train
+416.jpg,Not Healed,High,train
+419.jpg,Not Healed,Low,test
+42.jpg,Healed,Low,train
+420.jpg,Not Healed,Low,train
+422.jpg,Not Healed,Medium,validation
+423.jpg,Not Healed,Low,train
+424.jpg,Not Healed,Medium,test
+425.jpg,Healed,Low,validation
+427.jpg,Not Healed,Low,train
+428.jpg,Not Healed,Low,train
+429.jpg,Healed,Low,train
+43.jpg,Not Healed,Low,train
+430.jpg,Healed,Low,validation
+433.jpg,Healed,Low,train
+434.jpg,Not Healed,Low,train
+436.jpg,Not Healed,Low,test
+44.jpg,Healed,Low,test
+442.jpg,Healed,Low,test
+443.jpg,Not Healed,Low,train
+444.jpg,Not Healed,Low,train
+445.jpg,Not Healed,Low,test
+446.jpg,Healed,Low,validation
+448.jpg,Healed,Low,train
+449.jpg,Healed,Low,train
+45.jpg,Healed,Low,train
+451.jpg,Healed,Low,test
+453.jpg,Healed,Low,train
+455.jpg,Not Healed,Low,train
+456.jpg,Not Healed,Low,train
+457.jpg,Healed,Low,test
+459.jpg,Not Healed,Low,test
+46.jpg,Healed,Low,test
+460.jpg,Healed,Low,train
+462.jpg,Healed,Low,train
+463.jpg,Not Healed,Low,train
+464.jpg,Not Healed,Low,train
+465.jpg,Not Healed,Medium,test
+466.jpg,Not Healed,Medium,train
+467.jpg,Healed,Low,train
+468.jpg,Healed,Low,train
+469.jpg,Healed,Low,train
+47.jpg,Not Healed,Medium,validation
+470.jpg,Healed,Low,test
+471.jpg,Healed,Low,test
+472.jpg,Healed,Low,train
+473.jpg,Not Healed,Low,train
+475.jpg,Healed,Low,train
+476.jpg,Healed,Low,test
+477.jpg,Not Healed,Low,test
+478.jpg,Not Healed,Low,test
+479.jpg,Not Healed,Low,train
+48.jpg,Healed,Low,train
+480.jpg,Healed,Low,validation
+481.jpg,Not Healed,Low,test
+482.jpg,Healed,Low,train
+485.jpg,Healed,Low,train
+487.jpg,Healed,Low,train
+488.jpg,Healed,Low,train
+489.jpg,Healed,Low,train
+49.jpg,Healed,Low,train
+492.jpg,Not Healed,Low,train
+493.jpg,Not Healed,Low,train
+495.jpg,Healed,Low,test
+497.jpg,Healed,Low,train
+498.jpg,Healed,Low,train
+5.jpg,Healed,Low,train
+50.jpg,Not Healed,Medium,validation
+501.jpg,Healed,Low,test
+502.jpg,Healed,Low,train
+503.jpg,Healed,Low,validation
+504.jpg,Healed,Low,train
+506.jpg,Healed,Low,train
+509.jpg,Not Healed,Medium,train
+51.jpg,Healed,Low,train
+510.jpg,Healed,Low,train
+511.jpg,Healed,Low,test
+512.jpg,Healed,Low,train
+513.jpg,Healed,Low,train
+515.jpg,Not Healed,High,train
+516.jpg,Healed,Low,validation
+517.jpg,Healed,Low,validation
+519.jpg,Healed,Low,train
+52.jpg,Healed,Low,train
+520.jpg,Not Healed,Low,test
+521.jpg,Healed,Low,test
+525.jpg,Not Healed,Low,train
+526.jpg,Not Healed,Medium,train
+527.jpg,Healed,Low,train
+529.jpg,Not Healed,Low,train
+53.jpg,Healed,Low,train
+531.jpg,Healed,Low,train
+532.jpg,Not Healed,Low,validation
+533.jpg,Healed,Low,test
+534.jpg,Healed,Low,train
+536.jpg,Not Healed,Low,train
+538.jpg,Healed,Low,train
+540.jpg,Healed,Low,train
+541.jpg,Healed,Low,train
+542.jpg,Healed,Low,train
+544.jpg,Healed,Low,test
+546.jpg,Healed,Low,train
+547.jpg,Healed,Low,train
+548.jpg,Healed,Medium,train
+55.jpg,Healed,Low,train
+550.jpg,Not Healed,Low,validation
+551.jpg,Not Healed,Low,train
+553.jpg,Healed,Low,test
+554.jpg,Not Healed,Low,train
+555.jpg,Healed,Low,train
+556.jpg,Not Healed,Medium,train
+559.jpg,Not Healed,Low,train
+56.jpg,Healed,Low,train
+560.jpg,Healed,Low,test
+561.jpg,Not Healed,Low,train
+563.jpg,Healed,Low,train
+565.jpg,Healed,Low,train
+566.jpg,Healed,Low,train
+568.jpg,Healed,Low,validation
+569.jpg,Not Healed,Low,train
+57.jpg,Healed,Low,train
+571.jpg,Healed,Low,train
+574.jpg,Healed,Low,train
+575.jpg,Healed,Low,test
+576.jpg,Healed,Low,test
+578.jpg,Healed,Low,test
+579.jpg,Not Healed,Low,train
+58.jpg,Healed,Low,train
+580.jpg,Not Healed,Low,train
+581.jpg,Not Healed,Medium,train
+582.jpg,Healed,Low,test
+583.jpg,Healed,Low,train
+584.jpg,Healed,Low,train
+585.jpg,Healed,Low,train
+587.jpg,Healed,Low,train
+588.jpg,Healed,Low,test
+59.jpg,Healed,Low,train
+590.jpg,Not Healed,Low,test
+591.jpg,Not Healed,Medium,train
+592.jpg,Not Healed,Low,test
+593.jpg,Healed,Low,train
+594.jpg,Healed,Low,train
+595.jpg,Healed,Low,train
+597.jpg,Healed,Low,validation
+598.jpg,Not Healed,Low,train
+6.jpg,Not Healed,Medium,train
+60.jpg,Healed,Low,train
+600.jpg,Not Healed,Medium,train
+602.jpg,Healed,Low,test
+605.jpg,Not Healed,Low,train
+606.jpg,Healed,Low,train
+607.jpg,Healed,Low,train
+608.jpg,Not Healed,Low,train
+609.jpg,Not Healed,Medium,train
+61.jpg,Healed,Low,train
+610.jpg,Healed,Low,train
+611.jpg,Healed,Low,train
+612.jpg,Not Healed,High,test
+615.jpg,Healed,Low,train
+617.jpg,Healed,Low,train
+618.jpg,Not Healed,Medium,train
+62.jpg,Healed,Low,train
+622.jpg,Not Healed,Low,train
+623.jpg,Healed,Low,test
+624.jpg,Not Healed,Low,train
+625.jpg,Not Healed,Low,test
+626.jpg,Healed,Low,test
+627.jpg,Not Healed,Medium,validation
+628.jpg,Healed,Low,train
+629.jpg,Healed,Low,train
+63.jpg,Healed,Low,test
+630.jpg,Not Healed,Medium,train
+631.jpg,Healed,Low,train
+634.jpg,Healed,Low,test
+637.jpg,Not Healed,Medium,train
+639.jpg,Not Healed,Low,train
+64.jpg,Healed,Low,validation
+640.jpg,Healed,Low,train
+641.jpg,Healed,Low,train
+642.jpg,Healed,Low,train
+643.jpg,Not Healed,Low,train
+646.jpg,Not Healed,Medium,train
+648.jpg,Healed,Low,train
+650.jpg,Healed,Low,train
+652.jpg,Not Healed,Low,train
+653.jpg,Healed,Low,validation
+654.jpg,Not Healed,Low,train
+656.jpg,Not Healed,High,train
+657.jpg,Healed,Low,test
+658.jpg,Not Healed,Medium,train
+659.jpg,Healed,Low,test
+66.jpg,Not Healed,Medium,test
+660.jpg,Healed,Low,train
+661.jpg,Not Healed,Medium,train
+663.jpg,Healed,Low,test
+665.jpg,Not Healed,Medium,train
+666.jpg,Healed,Low,validation
+667.jpg,Healed,Low,train
+668.jpg,Healed,Low,train
+669.jpg,Not Healed,High,train
+67.jpg,Healed,Low,test
+670.jpg,Healed,Low,train
+671.jpg,Not Healed,Low,validation
+674.jpg,Healed,Low,test
+675.jpg,Healed,Low,test
+677.jpg,Not Healed,Low,train
+678.jpg,Not Healed,Low,train
+679.jpg,Healed,Low,test
+68.jpg,Healed,Low,test
+680.jpg,Healed,Low,train
+681.jpg,Healed,Low,train
+682.jpg,Healed,Low,train
+684.jpg,Not Healed,Low,train
+685.jpg,Not Healed,Low,train
+686.jpg,Healed,Low,test
+687.jpg,Healed,Low,train
+688.jpg,Healed,Low,train
+689.jpg,Not Healed,Low,train
+69.jpg,Healed,Low,train
+692.jpg,Not Healed,Low,train
+694.jpg,Healed,Low,train
+696.jpg,Healed,Low,train
+698.jpg,Healed,Low,validation
+70.jpg,Healed,Low,validation
+700.jpg,Not Healed,Low,test
+702.jpg,Healed,Low,train
+703.jpg,Not Healed,Low,train
+704.jpg,Not Healed,Low,train
+705.jpg,Not Healed,Low,test
+707.jpg,Healed,Low,train
+709.jpg,Not Healed,Low,test
+71.jpg,Healed,Low,train
+711.jpg,Healed,Low,train
+712.jpg,Healed,Low,train
+713.jpg,Healed,Low,train
+714.jpg,Healed,Low,test
+715.jpg,Not Healed,Low,validation
+717.jpg,Not Healed,Low,test
+718.jpg,Healed,Low,test
+72.jpg,Healed,Low,train
+720.jpg,Healed,Low,train
+723.jpg,Not Healed,Low,train
+725.jpg,Healed,Low,validation
+730.jpg,Not Healed,Low,train
+731.jpg,Healed,Low,validation
+733.jpg,Healed,Low,train
+734.jpg,Healed,Low,test
+735.jpg,Healed,Low,train
+736.jpg,Not Healed,Low,validation
+737.jpg,Not Healed,Low,train
+739.jpg,Not Healed,Low,train
+74.jpg,Healed,Low,train
+740.jpg,Not Healed,Medium,train
+743.jpg,Healed,Low,train
+744.jpg,Healed,Low,train
+749.jpg,Healed,Low,train
+75.jpg,Healed,Low,test
+750.jpg,Healed,Low,validation
+752.jpg,Not Healed,Low,train
+753.jpg,Healed,Low,validation
+755.jpg,Not Healed,Low,validation
+758.jpg,Healed,Low,train
+76.jpg,Not Healed,Low,train
+760.jpg,Healed,Low,train
+761.jpg,Not Healed,Low,validation
+762.jpg,Not Healed,Low,train
+763.jpg,Healed,Low,train
+764.jpg,Healed,Low,train
+767.jpg,Not Healed,Low,test
+77.jpg,Healed,Low,test
+770.jpg,Healed,Low,train
+771.jpg,Not Healed,Low,train
+773.jpg,Not Healed,Low,train
+774.jpg,Healed,Low,train
+776.jpg,Healed,Low,train
+777.jpg,Not Healed,Medium,test
+778.jpg,Healed,Low,train
+779.jpg,Not Healed,Low,train
+78.jpg,Healed,Low,train
+783.jpg,Healed,Low,train
+784.jpg,Healed,Low,train
+785.jpg,Healed,Low,train
+786.jpg,Not Healed,Low,test
+787.jpg,Not Healed,Low,test
+788.jpg,Not Healed,Low,test
+789.jpg,Healed,Low,train
+79.jpg,Healed,Low,test
+792.jpg,Not Healed,Low,train
+793.jpg,Not Healed,Low,train
+794.jpg,Healed,Low,train
+795.jpg,Healed,Low,train
+796.jpg,Not Healed,Low,train
+797.jpg,Healed,Low,validation
+798.jpg,Healed,Low,validation
+799.jpg,Healed,Low,train
+8.jpg,Healed,Low,train
+80.jpg,Healed,Low,train
+802.jpg,Healed,Low,train
+803.jpg,Healed,Low,train
+804.jpg,Not Healed,Low,validation
+805.jpg,Not Healed,Low,test
+806.jpg,Healed,Low,test
+807.jpg,Healed,Low,test
+808.jpg,Healed,Low,train
+810.jpg,Not Healed,Low,validation
+811.jpg,Healed,Low,test
+812.jpg,Healed,Low,train
+813.jpg,Healed,Low,train
+814.jpg,Healed,Low,train
+817.jpg,Healed,Low,train
+82.jpg,Healed,Low,validation
+820.jpg,Not Healed,Low,train
+825.jpg,Not Healed,Low,train
+827.jpg,Healed,Low,train
+828.jpg,Healed,Low,train
+829.jpg,Healed,Low,train
+83.jpg,Healed,Low,train
+835.jpg,Healed,Low,train
+837.jpg,Healed,Low,validation
+838.jpg,Healed,Low,train
+839.jpg,Healed,Low,train
+84.jpg,Healed,Low,validation
+840.jpg,Healed,Low,train
+841.jpg,Healed,Low,train
+842.jpg,Healed,Low,test
+843.jpg,Not Healed,Medium,train
+845.jpg,Not Healed,Low,train
+846.jpg,Healed,Low,train
+848.jpg,Healed,Low,train
+849.jpg,Healed,Low,train
+85.jpg,Healed,Low,train
+850.jpg,Healed,Low,train
+852.jpg,Healed,Low,train
+853.jpg,Not Healed,Low,train
+857.jpg,Healed,Low,train
+858.jpg,Healed,Low,train
+86.jpg,Not Healed,Low,train
+862.jpg,Healed,Low,train
+863.jpg,Not Healed,Low,train
+867.jpg,Not Healed,Medium,train
+868.jpg,Not Healed,Medium,train
+87.jpg,Not Healed,Medium,test
+872.jpg,Healed,Low,train
+874.jpg,Not Healed,Low,train
+876.jpg,Healed,Low,train
+878.jpg,Healed,Low,train
+879.jpg,Not Healed,Low,train
+88.jpg,Not Healed,Medium,train
+880.jpg,Not Healed,Low,test
+881.jpg,Healed,Low,train
+882.jpg,Not Healed,Low,train
+884.jpg,Healed,Low,test
+887.jpg,Healed,Low,train
+888.jpg,Healed,Low,train
+889.jpg,Not Healed,Medium,train
+89.jpg,Healed,Low,train
+890.jpg,Healed,Low,validation
+891.jpg,Not Healed,Medium,train
+892.jpg,Not Healed,Low,train
+893.jpg,Healed,Low,train
+895.jpg,Not Healed,Low,train
+896.jpg,Not Healed,Medium,train
+897.jpg,Not Healed,Medium,train
+898.jpg,Healed,Low,train
+899.jpg,Not Healed,Medium,test
+90.jpg,Not Healed,Medium,test
+900.jpg,Healed,Low,train
+902.jpg,Not Healed,Medium,train
+904.jpg,Not Healed,Low,train
+906.jpg,Not Healed,Medium,train
+907.jpg,Healed,Low,test
+91.jpg,Healed,Low,train
+911.jpg,Not Healed,Low,train
+913.jpg,Not Healed,Low,train
+916.jpg,Not Healed,Low,train
+918.jpg,Not Healed,High,train
+919.jpg,Not Healed,Low,train
+92.jpg,Healed,Low,train
+920.jpg,Not Healed,Medium,train
+921.jpg,Healed,Low,train
+922.jpg,Not Healed,Low,train
+924.jpg,Not Healed,Low,train
+926.jpg,Healed,Low,train
+927.jpg,Healed,Low,train
+928.jpg,Not Healed,Low,test
+929.jpg,Not Healed,Low,train
+93.jpg,Healed,Low,test
+930.jpg,Healed,Low,train
+931.jpg,Not Healed,Medium,train
+933.jpg,Not Healed,Low,test
+936.jpg,Not Healed,Medium,train
+937.jpg,Not Healed,High,test
+938.jpg,Not Healed,Low,train
+939.jpg,Not Healed,Medium,train
+94.jpg,Healed,Low,validation
+940.jpg,Healed,Low,train
+941.jpg,Not Healed,High,train
+942.jpg,Not Healed,Medium,test
+943.jpg,Not Healed,High,test
+944.jpg,Healed,Low,test
+945.jpg,Healed,Low,validation
+946.jpg,Not Healed,Low,train
+95.jpg,Not Healed,Medium,validation
+950.jpg,Not Healed,Medium,train
+953.jpg,Not Healed,Medium,train
+955.jpg,Not Healed,High,train
+956.jpg,Not Healed,High,train
+958.jpg,Not Healed,Low,train
+959.jpg,Healed,Low,train
+961.jpg,Not Healed,Medium,train
+962.jpg,Not Healed,Medium,train
+963.jpg,Healed,Low,train
+964.jpg,Not Healed,High,train
+966.jpg,Not Healed,Low,train
+967.jpg,Not Healed,High,train
+968.jpg,Not Healed,High,train
+969.jpg,Not Healed,Medium,train
+97.jpg,Healed,Low,train
+970.jpg,Healed,Low,train
+971.jpg,Not Healed,Medium,validation
+973.jpg,Not Healed,High,test
+974.jpg,Healed,Low,test
+976.jpg,Healed,Low,validation
+978.jpg,Not Healed,High,train
+979.jpg,Healed,Low,validation
+98.jpg,Healed,Low,train
+983.jpg,Not Healed,Low,test
+984.jpg,Healed,Low,test
+985.jpg,Not Healed,Medium,test
+987.jpg,Healed,Low,train
+988.jpg,Not Healed,Medium,validation
+989.jpg,Not Healed,Low,train
+99.jpg,Healed,Low,test
+990.jpg,Not Healed,Low,train
+993.jpg,Healed,Low,train
+994.jpg,Not Healed,Low,train
+995.jpg,Not Healed,Medium,train
+996.jpg,Not Healed,Medium,train
+998.jpg,Not Healed,Low,train
+999.jpg,Not Healed,Medium,train

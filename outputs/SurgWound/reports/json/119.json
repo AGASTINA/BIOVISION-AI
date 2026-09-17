@@ -1,0 +1,209 @@
+{
+  "image_id": "119.jpg",
+  "wound_assessment": {
+    "description": "Measured wound-mask geometry and masked visual features; these measurements are not diagnoses.",
+    "measurements": {
+      "wound_area": 1828.0,
+      "wound_perimeter": 283.66399371623993,
+      "aspect_ratio": 1.0963855421686748,
+      "circularity": 0.28548127605701606,
+      "compactness": 44.01819547650274
+    }
+  },
+  "peri_wound_assessment": {
+    "description": "Available masked color and texture measurements from the peri-wound region; these measurements are not diagnoses.",
+    "measurements": {
+      "rgb_mean_r": 142.36550836550836,
+      "rgb_mean_g": 104.6975546975547,
+      "rgb_mean_b": 92.13449163449164,
+      "hsv_mean_h": 7.311239811239811,
+      "hsv_mean_s": 91.42385242385242,
+      "hsv_mean_v": 142.36550836550836,
+      "glcm_contrast": 1.4378708255636548,
+      "glcm_homogeneity": 0.7139948410884163,
+      "glcm_energy": 0.2060286295827682,
+      "glcm_entropy": 5.345399120011683
+    }
+  },
+  "healing_assessment": {
+    "description": "Image-level healing status classification, not future healing prediction.",
+    "healed_probability": 0.6846864521503448,
+    "not_healed_probability": 0.31531354784965515,
+    "predicted_class": "Healed"
+  },
+  "infection_risk_assessment": {
+    "description": "Three-class infection-risk classification; not a binary infection/no-infection determination.",
+    "low_probability": 0.9810720086097717,
+    "medium_probability": 0.018262924626469612,
+    "high_probability": 0.0006651264848187566,
+    "predicted_class": "Low"
+  },
+  "btis": {
+    "label": "Experimental BioVision Tissue/Healing Infection Score (prototype)",
+    "value": 22.854152693466773,
+    "healing_component": 31.531354784965515,
+    "infection_component": 0.9796588798053563,
+    "tissue_component": 49.24873613779213,
+    "formula": "BTIS = 0.40 * healing_component + 0.40 * infection_component + 0.20 * tissue_component",
+    "clinical_validation": false
+  },
+  "explainability": {
+    "healing_top_features": [
+      {
+        "feature": "hsv_std_h",
+        "mean_abs_shap": 0.45121005177497864,
+        "mean_shap": -0.10942190885543823,
+        "direction": "negative",
+        "group": "handcrafted color"
+      },
+      {
+        "feature": "hsv_std_v",
+        "mean_abs_shap": 0.3141961097717285,
+        "mean_shap": -0.12860934436321259,
+        "direction": "negative",
+        "group": "handcrafted color"
+      },
+      {
+        "feature": "lab_std_a",
+        "mean_abs_shap": 0.26402589678764343,
+        "mean_shap": -0.03987971320748329,
+        "direction": "negative",
+        "group": "handcrafted color"
+      },
+      {
+        "feature": "lab_std_l",
+        "mean_abs_shap": 0.2502472996711731,
+        "mean_shap": -0.08101073652505875,
+        "direction": "negative",
+        "group": "handcrafted color"
+      },
+      {
+        "feature": "efficientnet_0706",
+        "mean_abs_shap": 0.22873620688915253,
+        "mean_shap": 0.009230704046785831,
+        "direction": "positive",
+        "group": "EfficientNet deep features"
+      }
+    ],
+    "infection_top_features": {
+      "Low": [
+        {
+          "feature": "hsv_std_h",
+          "mean_abs_shap": 0.41494107246398926,
+          "mean_shap": 0.24236083030700684,
+          "direction": "positive",
+          "group": "handcrafted color"
+        },
+        {
+          "feature": "efficientnet_1177",
+          "mean_abs_shap": 0.299538254737854,
+          "mean_shap": 0.1416381448507309,
+          "direction": "positive",
+          "group": "EfficientNet deep features"
+        },
+        {
+          "feature": "lab_mean_a",
+          "mean_abs_shap": 0.24751175940036774,
+          "mean_shap": 0.12051734328269958,
+          "direction": "positive",
+          "group": "handcrafted color"
+        },
+        {
+          "feature": "rgb_mean_r",
+          "mean_abs_shap": 0.20915384590625763,
+          "mean_shap": 0.12317583709955215,
+          "direction": "positive",
+          "group": "handcrafted color"
+        },
+        {
+          "feature": "rgb_std_g",
+          "mean_abs_shap": 0.13574518263339996,
+          "mean_shap": 0.08466203510761261,
+          "direction": "positive",
+          "group": "handcrafted color"
+        }
+      ],
+      "Medium": [
+        {
+          "feature": "rgb_mean_b",
+          "mean_abs_shap": 0.29323810338974,
+          "mean_shap": -0.10777638852596283,
+          "direction": "negative",
+          "group": "handcrafted color"
+        },
+        {
+          "feature": "hsv_std_s",
+          "mean_abs_shap": 0.2799226939678192,
+          "mean_shap": -0.09398902952671051,
+          "direction": "negative",
+          "group": "handcrafted color"
+        },
+        {
+          "feature": "rgb_mean_r",
+          "mean_abs_shap": 0.15115731954574585,
+          "mean_shap": -0.09053214639425278,
+          "direction": "negative",
+          "group": "handcrafted color"
+        },
+        {
+          "feature": "hsv_std_h",
+          "mean_abs_shap": 0.14886270463466644,
+          "mean_shap": -0.08095535635948181,
+          "direction": "negative",
+          "group": "handcrafted color"
+        },
+        {
+          "feature": "rgb_std_b",
+          "mean_abs_shap": 0.1417454034090042,
+          "mean_shap": -0.04261526092886925,
+          "direction": "negative",
+          "group": "handcrafted color"
+        }
+      ],
+      "High": [
+        {
+          "feature": "efficientnet_0526",
+          "mean_abs_shap": 0.2772100269794464,
+          "mean_shap": -0.18380752205848694,
+          "direction": "negative",
+          "group": "EfficientNet deep features"
+        },
+        {
+          "feature": "efficientnet_0425",
+          "mean_abs_shap": 0.24260775744915009,
+          "mean_shap": -0.16396702826023102,
+          "direction": "negative",
+          "group": "EfficientNet deep features"
+        },
+        {
+          "feature": "efficientnet_0493",
+          "mean_abs_shap": 0.23452483117580414,
+          "mean_shap": -0.16649673879146576,
+          "direction": "negative",
+          "group": "EfficientNet deep features"
+        },
+        {
+          "feature": "rgb_std_r",
+          "mean_abs_shap": 0.22812876105308533,
+          "mean_shap": -0.21469688415527344,
+          "direction": "negative",
+          "group": "handcrafted color"
+        },
+        {
+          "feature": "efficientnet_1108",
+          "mean_abs_shap": 0.19331689178943634,
+          "mean_shap": -0.13735629618167877,
+          "direction": "negative",
+          "group": "EfficientNet deep features"
+        }
+      ]
+    }
+  },
+  "model_limitations": [
+    "High-risk infection F1 = 0.0000; high-risk recall = 0.0000.",
+    "High-risk predictions must not be presented as clinically reliable.",
+    "The infection model preserves Low, Medium, and High outputs but has weak minority-class performance.",
+    "SurgWound Healing Status is an image-level label, not longitudinal healing evidence."
+  ],
+  "research_use_disclaimer": "Research-use only. This automated report is not clinical advice, diagnosis, prognosis, or a validated medical decision tool. BTIS is an experimental non-clinical prototype."
+}

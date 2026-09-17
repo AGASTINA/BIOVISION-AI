@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>BioVision report 134.jpg</title>
+<style>body{font-family:Arial,sans-serif;max-width:900px;margin:2rem auto;line-height:1.45}section{border-top:1px solid #ddd;padding:1rem 0}code{background:#f3f4f6;padding:.1rem .25rem}.warning{background:#fff4d6;padding:1rem}</style></head>
+<body><h1>BioVision Clinical Research Report</h1><p><strong>Image ID:</strong> 134.jpg</p>
+<section><h2>Wound Assessment</h2><p>Measured wound-mask geometry and masked visual features; these measurements are not diagnoses.</p><pre>{
+  &quot;wound_area&quot;: 2777.0,
+  &quot;wound_perimeter&quot;: 239.15432798862457,
+  &quot;aspect_ratio&quot;: 1.0461538461538462,
+  &quot;circularity&quot;: 0.6101396580412594,
+  &quot;compactness&quot;: 20.595892184260215
+}</pre></section>
+<section><h2>Peri-wound Assessment</h2><p>Available masked color and texture measurements from the peri-wound region; these measurements are not diagnoses.</p><pre>{
+  &quot;rgb_mean_r&quot;: 146.1228897715988,
+  &quot;rgb_mean_g&quot;: 106.64473684210526,
+  &quot;rgb_mean_b&quot;: 84.49503475670308,
+  &quot;hsv_mean_h&quot;: 11.280039721946375,
+  &quot;hsv_mean_s&quot;: 108.83962264150944,
+  &quot;hsv_mean_v&quot;: 146.1228897715988,
+  &quot;glcm_contrast&quot;: 1.0835133189344852,
+  &quot;glcm_homogeneity&quot;: 0.712226788090719,
+  &quot;glcm_energy&quot;: 0.22122679874801987,
+  &quot;glcm_entropy&quot;: 5.003034287125181
+}</pre></section>
+<section><h2>Healing Assessment</h2><p>Image-level healing status classification: <strong>Healed</strong></p><pre>{
+  &quot;description&quot;: &quot;Image-level healing status classification, not future healing prediction.&quot;,
+  &quot;healed_probability&quot;: 0.7294152975082397,
+  &quot;not_healed_probability&quot;: 0.27058470249176025,
+  &quot;predicted_class&quot;: &quot;Healed&quot;
+}</pre></section>
+<section><h2>Infection-risk Assessment</h2><p>Three-class infection-risk output: <strong>Low</strong></p><pre>{
+  &quot;description&quot;: &quot;Three-class infection-risk classification; not a binary infection/no-infection determination.&quot;,
+  &quot;low_probability&quot;: 0.9797383546829224,
+  &quot;medium_probability&quot;: 0.013432351872324944,
+  &quot;high_probability&quot;: 0.006829302292317152,
+  &quot;predicted_class&quot;: &quot;Low&quot;
+}</pre></section>
+<section><h2>Experimental BioVision Tissue/Healing Infection Score (prototype)</h2><pre>{
+  &quot;label&quot;: &quot;Experimental BioVision Tissue/Healing Infection Score (prototype)&quot;,
+  &quot;value&quot;: 21.206334639323266,
+  &quot;healing_component&quot;: 27.058470249176025,
+  &quot;infection_component&quot;: 1.3545478228479624,
+  &quot;tissue_component&quot;: 49.20563705256836,
+  &quot;formula&quot;: &quot;BTIS = 0.40 * healing_component + 0.40 * infection_component + 0.20 * tissue_component&quot;,
+  &quot;clinical_validation&quot;: false
+}</pre></section>
+<section><h2>Explainability</h2><h3>Healing</h3><ul><li><code>hsv_std_h</code>: mean |SHAP| 0.451210; negative; handcrafted color</li><li><code>hsv_std_v</code>: mean |SHAP| 0.314196; negative; handcrafted color</li><li><code>lab_std_a</code>: mean |SHAP| 0.264026; negative; handcrafted color</li><li><code>lab_std_l</code>: mean |SHAP| 0.250247; negative; handcrafted color</li><li><code>efficientnet_0706</code>: mean |SHAP| 0.228736; positive; EfficientNet deep features</li></ul><h3>Infection risk</h3><h4>Low</h4><ul><li><code>hsv_std_h</code>: mean |SHAP| 0.414941; positive; handcrafted color</li><li><code>efficientnet_1177</code>: mean |SHAP| 0.299538; positive; EfficientNet deep features</li><li><code>lab_mean_a</code>: mean |SHAP| 0.247512; positive; handcrafted color</li><li><code>rgb_mean_r</code>: mean |SHAP| 0.209154; positive; handcrafted color</li><li><code>rgb_std_g</code>: mean |SHAP| 0.135745; positive; handcrafted color</li></ul><h4>Medium</h4><ul><li><code>rgb_mean_b</code>: mean |SHAP| 0.293238; negative; handcrafted color</li><li><code>hsv_std_s</code>: mean |SHAP| 0.279923; negative; handcrafted color</li><li><code>rgb_mean_r</code>: mean |SHAP| 0.151157; negative; handcrafted color</li><li><code>hsv_std_h</code>: mean |SHAP| 0.148863; negative; handcrafted color</li><li><code>rgb_std_b</code>: mean |SHAP| 0.141745; negative; handcrafted color</li></ul><h4>High</h4><ul><li><code>efficientnet_0526</code>: mean |SHAP| 0.277210; negative; EfficientNet deep features</li><li><code>efficientnet_0425</code>: mean |SHAP| 0.242608; negative; EfficientNet deep features</li><li><code>efficientnet_0493</code>: mean |SHAP| 0.234525; negative; EfficientNet deep features</li><li><code>rgb_std_r</code>: mean |SHAP| 0.228129; negative; handcrafted color</li><li><code>efficientnet_1108</code>: mean |SHAP| 0.193317; negative; EfficientNet deep features</li></ul></section>
+<section class="warning"><h2>Model Limitations</h2><ul><li>High-risk infection F1 = 0.0000; high-risk recall = 0.0000.</li><li>High-risk predictions must not be presented as clinically reliable.</li><li>The infection model preserves Low, Medium, and High outputs but has weak minority-class performance.</li><li>SurgWound Healing Status is an image-level label, not longitudinal healing evidence.</li></ul></section>
+<section><h2>Research-use Disclaimer</h2><p>Research-use only. This automated report is not clinical advice, diagnosis, prognosis, or a validated medical decision tool. BTIS is an experimental non-clinical prototype.</p></section>
+</body></html>

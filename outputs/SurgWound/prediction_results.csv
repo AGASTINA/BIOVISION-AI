@@ -1,0 +1,687 @@
+filename,true_healing,predicted_healing,true_infection,predicted_infection
+0.jpg,Not Healed,Not Healed,Medium,Medium
+1.jpg,Healed,Healed,Low,Low
+10.jpg,Healed,Healed,Low,Low
+100.jpg,Healed,Healed,Low,Low
+1000.jpg,Not Healed,Not Healed,Low,Low
+1001.jpg,Healed,Healed,Low,Low
+1002.jpg,Not Healed,Not Healed,Low,Low
+1005.jpg,Healed,Not Healed,Low,Low
+1007.jpg,Healed,Healed,Low,Low
+1008.jpg,Healed,Healed,Low,Low
+1009.jpg,Healed,Healed,Low,Low
+101.jpg,Healed,Healed,Low,Low
+102.jpg,Healed,Healed,Low,Low
+103.jpg,Healed,Healed,Low,Low
+104.jpg,Healed,Healed,Low,Low
+105.jpg,Healed,Healed,Low,Low
+106.jpg,Healed,Healed,Low,Low
+107.jpg,Healed,Healed,Low,Low
+108.jpg,Healed,Healed,Low,Low
+109.jpg,Healed,Healed,Low,Low
+11.jpg,Healed,Healed,Low,Low
+110.jpg,Healed,Not Healed,Low,Low
+111.jpg,Not Healed,Not Healed,High,Low
+112.jpg,Healed,Healed,Low,Low
+116.jpg,Not Healed,Not Healed,Medium,Medium
+117.jpg,Healed,Healed,Low,Low
+118.jpg,Healed,Healed,Low,Low
+119.jpg,Not Healed,Healed,Low,Low
+12.jpg,Not Healed,Not Healed,Medium,Low
+120.jpg,Healed,Healed,Low,Low
+121.jpg,Not Healed,Not Healed,Low,Low
+122.jpg,Healed,Healed,Low,Low
+123.jpg,Healed,Healed,Low,Low
+124.jpg,Not Healed,Not Healed,Medium,Low
+125.jpg,Healed,Healed,Low,Low
+126.jpg,Healed,Healed,Low,Low
+128.jpg,Healed,Healed,Low,Low
+129.jpg,Healed,Healed,Low,Low
+13.jpg,Healed,Not Healed,Low,Low
+130.jpg,Healed,Healed,Low,Low
+131.jpg,Healed,Healed,Low,Low
+132.jpg,Not Healed,Not Healed,Medium,Medium
+133.jpg,Healed,Healed,Low,Low
+134.jpg,Healed,Healed,Low,Low
+135.jpg,Healed,Healed,Low,Low
+136.jpg,Healed,Healed,Low,Low
+137.jpg,Healed,Healed,Low,Low
+138.jpg,Healed,Healed,Low,Low
+139.jpg,Healed,Healed,Low,Low
+14.jpg,Healed,Healed,Low,Low
+140.jpg,Not Healed,Not Healed,High,Low
+141.jpg,Not Healed,Not Healed,Low,Low
+143.jpg,Healed,Healed,Low,Low
+144.jpg,Not Healed,Not Healed,High,High
+145.jpg,Not Healed,Not Healed,Medium,Medium
+146.jpg,Not Healed,Healed,Medium,Low
+147.jpg,Healed,Healed,Low,Low
+149.jpg,Not Healed,Not Healed,Medium,Low
+15.jpg,Healed,Not Healed,Low,Low
+150.jpg,Not Healed,Not Healed,Medium,Medium
+151.jpg,Healed,Healed,Low,Low
+152.jpg,Healed,Healed,Low,Low
+153.jpg,Not Healed,Not Healed,Low,Low
+154.jpg,Healed,Healed,Low,Low
+155.jpg,Not Healed,Not Healed,Medium,Medium
+156.jpg,Healed,Healed,Low,Low
+157.jpg,Not Healed,Healed,Medium,Low
+158.jpg,Not Healed,Not Healed,High,High
+159.jpg,Not Healed,Not Healed,Medium,Medium
+16.jpg,Healed,Healed,Low,Low
+160.jpg,Healed,Healed,Low,Low
+161.jpg,Healed,Healed,Low,Low
+163.jpg,Healed,Healed,Low,Low
+164.jpg,Not Healed,Not Healed,Medium,Medium
+165.jpg,Healed,Healed,Low,Low
+166.jpg,Not Healed,Not Healed,Low,Low
+167.jpg,Healed,Healed,Low,Low
+169.jpg,Not Healed,Not Healed,Low,Low
+17.jpg,Healed,Healed,Low,Low
+170.jpg,Healed,Healed,Low,Low
+171.jpg,Not Healed,Not Healed,Medium,Medium
+172.jpg,Not Healed,Not Healed,Low,Low
+174.jpg,Not Healed,Not Healed,Medium,Medium
+175.jpg,Healed,Healed,Low,Low
+176.jpg,Healed,Healed,Low,Low
+178.jpg,Not Healed,Not Healed,Low,Low
+18.jpg,Healed,Healed,Low,Low
+180.jpg,Healed,Healed,Low,Low
+183.jpg,Not Healed,Healed,Low,Low
+184.jpg,Not Healed,Not Healed,Low,Low
+186.jpg,Healed,Healed,Low,Low
+187.jpg,Healed,Healed,Low,Low
+19.jpg,Healed,Healed,Low,Low
+190.jpg,Not Healed,Not Healed,Medium,Low
+191.jpg,Healed,Healed,Low,Low
+192.jpg,Not Healed,Not Healed,Low,Low
+193.jpg,Healed,Not Healed,Low,Low
+194.jpg,Not Healed,Healed,Low,Low
+195.jpg,Healed,Healed,Low,Low
+197.jpg,Not Healed,Not Healed,Medium,Medium
+199.jpg,Not Healed,Not Healed,Low,Low
+2.jpg,Not Healed,Not Healed,Medium,Medium
+20.jpg,Healed,Healed,Low,Low
+200.jpg,Not Healed,Not Healed,Low,Low
+202.jpg,Not Healed,Not Healed,Low,Low
+206.jpg,Healed,Healed,Low,Low
+207.jpg,Healed,Not Healed,Medium,Medium
+208.jpg,Healed,Healed,Low,Low
+209.jpg,Healed,Healed,Low,Low
+21.jpg,Healed,Healed,Low,Low
+210.jpg,Healed,Healed,Low,Low
+211.jpg,Not Healed,Not Healed,Low,Low
+214.jpg,Not Healed,Healed,Low,Low
+215.jpg,Not Healed,Not Healed,Medium,Medium
+216.jpg,Not Healed,Healed,Low,Low
+217.jpg,Not Healed,Not Healed,Low,Low
+22.jpg,Healed,Healed,Low,Low
+221.jpg,Not Healed,Not Healed,Low,Low
+223.jpg,Healed,Healed,Low,Low
+226.jpg,Healed,Healed,Low,Low
+227.jpg,Healed,Healed,Low,Low
+230.jpg,Healed,Healed,Low,Low
+233.jpg,Not Healed,Not Healed,Low,Low
+237.jpg,Not Healed,Healed,Low,Low
+238.jpg,Healed,Healed,Low,Low
+24.jpg,Healed,Healed,Low,Low
+240.jpg,Healed,Not Healed,Low,Low
+241.jpg,Healed,Healed,Low,Low
+245.jpg,Not Healed,Not Healed,Low,Low
+247.jpg,Not Healed,Not Healed,Medium,Medium
+25.jpg,Not Healed,Healed,Medium,Low
+250.jpg,Healed,Healed,Low,Low
+253.jpg,Not Healed,Not Healed,Low,Low
+255.jpg,Not Healed,Not Healed,Low,Low
+257.jpg,Not Healed,Healed,Low,Low
+258.jpg,Healed,Healed,Low,Low
+259.jpg,Healed,Healed,Low,Low
+26.jpg,Healed,Healed,Low,Low
+260.jpg,Healed,Healed,Low,Low
+264.jpg,Healed,Healed,Low,Low
+265.jpg,Not Healed,Not Healed,Low,Low
+266.jpg,Healed,Healed,Low,Low
+267.jpg,Not Healed,Not Healed,Low,Low
+268.jpg,Not Healed,Healed,Low,Low
+269.jpg,Healed,Healed,Low,Low
+271.jpg,Not Healed,Not Healed,High,High
+274.jpg,Healed,Healed,Low,Low
+275.jpg,Healed,Healed,Low,Low
+276.jpg,Healed,Healed,Low,Low
+277.jpg,Healed,Healed,Low,Low
+278.jpg,Not Healed,Not Healed,Low,Low
+279.jpg,Not Healed,Not Healed,Low,Low
+280.jpg,Not Healed,Not Healed,Low,Low
+282.jpg,Not Healed,Not Healed,Medium,Medium
+284.jpg,Healed,Healed,Low,Low
+285.jpg,Not Healed,Not Healed,Low,Low
+286.jpg,Healed,Healed,Low,Low
+287.jpg,Healed,Not Healed,Low,Low
+288.jpg,Healed,Healed,Low,Low
+29.jpg,Healed,Healed,Low,Low
+290.jpg,Healed,Healed,Low,Low
+291.jpg,Healed,Healed,Low,Low
+292.jpg,Not Healed,Not Healed,Low,Low
+293.jpg,Healed,Healed,Low,Low
+294.jpg,Healed,Healed,Low,Low
+295.jpg,Healed,Healed,Low,Low
+296.jpg,Healed,Healed,Low,Low
+299.jpg,Healed,Healed,Low,Low
+3.jpg,Not Healed,Healed,Medium,Low
+30.jpg,Healed,Healed,Low,Low
+302.jpg,Healed,Healed,Low,Low
+303.jpg,Healed,Healed,Low,Low
+305.jpg,Not Healed,Not Healed,Medium,Medium
+308.jpg,Healed,Healed,Medium,Medium
+309.jpg,Not Healed,Not Healed,Low,Low
+31.jpg,Healed,Healed,Low,Low
+310.jpg,Healed,Healed,Low,Low
+311.jpg,Healed,Healed,Low,Low
+312.jpg,Not Healed,Not Healed,Low,Low
+313.jpg,Healed,Healed,Low,Low
+314.jpg,Not Healed,Healed,Low,Low
+315.jpg,Not Healed,Healed,Low,Low
+316.jpg,Healed,Healed,Low,Low
+317.jpg,Not Healed,Not Healed,Low,Low
+318.jpg,Healed,Healed,Low,Low
+32.jpg,Healed,Healed,Low,Low
+320.jpg,Not Healed,Not Healed,Medium,Low
+322.jpg,Healed,Healed,Low,Low
+323.jpg,Healed,Healed,Low,Low
+325.jpg,Healed,Healed,Medium,Medium
+33.jpg,Healed,Healed,Low,Low
+331.jpg,Not Healed,Not Healed,Low,Low
+334.jpg,Healed,Healed,Low,Low
+336.jpg,Healed,Healed,Low,Low
+337.jpg,Not Healed,Not Healed,Medium,Medium
+338.jpg,Healed,Healed,Low,Low
+339.jpg,Not Healed,Not Healed,Low,Low
+34.jpg,Healed,Healed,Low,Low
+342.jpg,Healed,Healed,Low,Low
+345.jpg,Not Healed,Not Healed,Low,Low
+347.jpg,Not Healed,Not Healed,Low,Low
+35.jpg,Healed,Healed,Low,Low
+352.jpg,Not Healed,Not Healed,Medium,Medium
+355.jpg,Healed,Healed,Low,Low
+356.jpg,Healed,Healed,Low,Low
+357.jpg,Healed,Healed,Low,Low
+359.jpg,Healed,Healed,Low,Low
+36.jpg,Healed,Healed,Low,Low
+360.jpg,Not Healed,Not Healed,High,High
+361.jpg,Healed,Healed,Low,Low
+363.jpg,Not Healed,Not Healed,High,High
+365.jpg,Healed,Healed,Low,Low
+366.jpg,Not Healed,Not Healed,Low,Low
+37.jpg,Healed,Healed,Low,Low
+370.jpg,Healed,Healed,Low,Low
+372.jpg,Healed,Healed,Low,Low
+374.jpg,Not Healed,Not Healed,Low,Low
+375.jpg,Not Healed,Not Healed,Low,Low
+377.jpg,Healed,Healed,Low,Low
+378.jpg,Not Healed,Not Healed,Medium,High
+379.jpg,Healed,Healed,Low,Low
+38.jpg,Not Healed,Not Healed,Medium,Medium
+382.jpg,Healed,Healed,Low,Low
+385.jpg,Healed,Not Healed,Low,Low
+386.jpg,Not Healed,Not Healed,Medium,Medium
+387.jpg,Not Healed,Healed,Low,Low
+389.jpg,Healed,Healed,Low,Low
+39.jpg,Healed,Healed,Low,Low
+392.jpg,Healed,Healed,Low,Low
+394.jpg,Healed,Healed,Low,Low
+396.jpg,Healed,Healed,Low,Low
+398.jpg,Not Healed,Not Healed,Low,Low
+399.jpg,Healed,Healed,Low,Low
+400.jpg,Not Healed,Not Healed,Low,Low
+401.jpg,Not Healed,Not Healed,Low,Low
+402.jpg,Healed,Healed,Low,Low
+403.jpg,Not Healed,Not Healed,Low,Low
+404.jpg,Healed,Healed,Low,Low
+405.jpg,Healed,Healed,Low,Low
+406.jpg,Not Healed,Not Healed,Medium,Medium
+407.jpg,Healed,Healed,Low,Low
+408.jpg,Not Healed,Not Healed,Low,Low
+41.jpg,Healed,Not Healed,Low,Low
+410.jpg,Not Healed,Not Healed,Low,Low
+411.jpg,Healed,Healed,Low,Low
+412.jpg,Healed,Healed,Low,Low
+415.jpg,Healed,Healed,Low,Low
+416.jpg,Not Healed,Not Healed,High,High
+419.jpg,Not Healed,Healed,Low,Low
+42.jpg,Healed,Healed,Low,Low
+420.jpg,Not Healed,Not Healed,Low,Low
+422.jpg,Not Healed,Not Healed,Medium,Low
+423.jpg,Not Healed,Not Healed,Low,Low
+424.jpg,Not Healed,Not Healed,Medium,Low
+425.jpg,Healed,Healed,Low,Low
+427.jpg,Not Healed,Not Healed,Low,Low
+428.jpg,Not Healed,Not Healed,Low,Low
+429.jpg,Healed,Healed,Low,Low
+43.jpg,Not Healed,Not Healed,Low,Low
+430.jpg,Healed,Healed,Low,Low
+433.jpg,Healed,Healed,Low,Low
+434.jpg,Not Healed,Not Healed,Low,Low
+436.jpg,Not Healed,Healed,Low,Low
+44.jpg,Healed,Not Healed,Low,Low
+442.jpg,Healed,Not Healed,Low,Low
+443.jpg,Not Healed,Not Healed,Low,Low
+444.jpg,Not Healed,Not Healed,Low,Low
+445.jpg,Not Healed,Not Healed,Low,Low
+446.jpg,Healed,Healed,Low,Low
+448.jpg,Healed,Healed,Low,Low
+449.jpg,Healed,Healed,Low,Low
+45.jpg,Healed,Healed,Low,Low
+451.jpg,Healed,Not Healed,Low,Low
+453.jpg,Healed,Healed,Low,Low
+455.jpg,Not Healed,Not Healed,Low,Low
+456.jpg,Not Healed,Not Healed,Low,Low
+457.jpg,Healed,Healed,Low,Low
+459.jpg,Not Healed,Healed,Low,Low
+46.jpg,Healed,Healed,Low,Low
+460.jpg,Healed,Healed,Low,Low
+462.jpg,Healed,Healed,Low,Low
+463.jpg,Not Healed,Not Healed,Low,Low
+464.jpg,Not Healed,Not Healed,Low,Low
+465.jpg,Not Healed,Not Healed,Medium,Low
+466.jpg,Not Healed,Not Healed,Medium,Medium
+467.jpg,Healed,Healed,Low,Low
+468.jpg,Healed,Healed,Low,Low
+469.jpg,Healed,Healed,Low,Low
+47.jpg,Not Healed,Healed,Medium,Low
+470.jpg,Healed,Healed,Low,Low
+471.jpg,Healed,Not Healed,Low,Low
+472.jpg,Healed,Healed,Low,Low
+473.jpg,Not Healed,Not Healed,Low,Low
+475.jpg,Healed,Healed,Low,Low
+476.jpg,Healed,Healed,Low,Low
+477.jpg,Not Healed,Healed,Low,Low
+478.jpg,Not Healed,Healed,Low,Low
+479.jpg,Not Healed,Not Healed,Low,Low
+48.jpg,Healed,Healed,Low,Low
+480.jpg,Healed,Healed,Low,Low
+481.jpg,Not Healed,Healed,Low,Medium
+482.jpg,Healed,Healed,Low,Low
+485.jpg,Healed,Healed,Low,Low
+487.jpg,Healed,Healed,Low,Low
+488.jpg,Healed,Healed,Low,Low
+489.jpg,Healed,Healed,Low,Low
+49.jpg,Healed,Healed,Low,Low
+492.jpg,Not Healed,Not Healed,Low,Low
+493.jpg,Not Healed,Not Healed,Low,Low
+495.jpg,Healed,Healed,Low,Low
+497.jpg,Healed,Healed,Low,Low
+498.jpg,Healed,Healed,Low,Low
+5.jpg,Healed,Healed,Low,Low
+50.jpg,Not Healed,Not Healed,Medium,Low
+501.jpg,Healed,Not Healed,Low,Low
+502.jpg,Healed,Healed,Low,Low
+503.jpg,Healed,Not Healed,Low,Low
+504.jpg,Healed,Healed,Low,Low
+506.jpg,Healed,Healed,Low,Low
+509.jpg,Not Healed,Not Healed,Medium,Medium
+51.jpg,Healed,Healed,Low,Low
+510.jpg,Healed,Healed,Low,Low
+511.jpg,Healed,Not Healed,Low,Medium
+512.jpg,Healed,Healed,Low,Low
+513.jpg,Healed,Healed,Low,Low
+515.jpg,Not Healed,Not Healed,High,High
+516.jpg,Healed,Healed,Low,Low
+517.jpg,Healed,Healed,Low,Low
+519.jpg,Healed,Healed,Low,Low
+52.jpg,Healed,Healed,Low,Low
+520.jpg,Not Healed,Not Healed,Low,Low
+521.jpg,Healed,Not Healed,Low,Low
+525.jpg,Not Healed,Not Healed,Low,Low
+526.jpg,Not Healed,Not Healed,Medium,Medium
+527.jpg,Healed,Healed,Low,Low
+529.jpg,Not Healed,Not Healed,Low,Low
+53.jpg,Healed,Healed,Low,Low
+531.jpg,Healed,Healed,Low,Low
+532.jpg,Not Healed,Not Healed,Low,Low
+533.jpg,Healed,Healed,Low,Low
+534.jpg,Healed,Healed,Low,Low
+536.jpg,Not Healed,Not Healed,Low,Low
+538.jpg,Healed,Healed,Low,Low
+540.jpg,Healed,Healed,Low,Low
+541.jpg,Healed,Healed,Low,Low
+542.jpg,Healed,Healed,Low,Low
+544.jpg,Healed,Not Healed,Low,Low
+546.jpg,Healed,Healed,Low,Low
+547.jpg,Healed,Healed,Low,Low
+548.jpg,Healed,Healed,Medium,Medium
+55.jpg,Healed,Healed,Low,Low
+550.jpg,Not Healed,Not Healed,Low,Low
+551.jpg,Not Healed,Not Healed,Low,Low
+553.jpg,Healed,Healed,Low,Low
+554.jpg,Not Healed,Not Healed,Low,Low
+555.jpg,Healed,Healed,Low,Low
+556.jpg,Not Healed,Not Healed,Medium,Medium
+559.jpg,Not Healed,Not Healed,Low,Low
+56.jpg,Healed,Healed,Low,Low
+560.jpg,Healed,Healed,Low,Low
+561.jpg,Not Healed,Not Healed,Low,Low
+563.jpg,Healed,Healed,Low,Low
+565.jpg,Healed,Healed,Low,Low
+566.jpg,Healed,Healed,Low,Low
+568.jpg,Healed,Healed,Low,Low
+569.jpg,Not Healed,Not Healed,Low,Low
+57.jpg,Healed,Healed,Low,Low
+571.jpg,Healed,Healed,Low,Low
+574.jpg,Healed,Healed,Low,Low
+575.jpg,Healed,Healed,Low,Low
+576.jpg,Healed,Not Healed,Low,Low
+578.jpg,Healed,Healed,Low,Low
+579.jpg,Not Healed,Not Healed,Low,Low
+58.jpg,Healed,Healed,Low,Low
+580.jpg,Not Healed,Not Healed,Low,Low
+581.jpg,Not Healed,Not Healed,Medium,Medium
+582.jpg,Healed,Healed,Low,Low
+583.jpg,Healed,Healed,Low,Low
+584.jpg,Healed,Healed,Low,Low
+585.jpg,Healed,Healed,Low,Low
+587.jpg,Healed,Healed,Low,Low
+588.jpg,Healed,Healed,Low,Low
+59.jpg,Healed,Healed,Low,Low
+590.jpg,Not Healed,Healed,Low,Low
+591.jpg,Not Healed,Not Healed,Medium,Medium
+592.jpg,Not Healed,Not Healed,Low,Low
+593.jpg,Healed,Healed,Low,Low
+594.jpg,Healed,Healed,Low,Low
+595.jpg,Healed,Healed,Low,Low
+597.jpg,Healed,Not Healed,Low,Low
+598.jpg,Not Healed,Not Healed,Low,Low
+6.jpg,Not Healed,Not Healed,Medium,Medium
+60.jpg,Healed,Healed,Low,Low
+600.jpg,Not Healed,Not Healed,Medium,Medium
+602.jpg,Healed,Not Healed,Low,Low
+605.jpg,Not Healed,Not Healed,Low,Low
+606.jpg,Healed,Healed,Low,Low
+607.jpg,Healed,Healed,Low,Low
+608.jpg,Not Healed,Not Healed,Low,Low
+609.jpg,Not Healed,Not Healed,Medium,Medium
+61.jpg,Healed,Healed,Low,Low
+610.jpg,Healed,Healed,Low,Low
+611.jpg,Healed,Healed,Low,Low
+612.jpg,Not Healed,Not Healed,High,Medium
+615.jpg,Healed,Healed,Low,Low
+617.jpg,Healed,Healed,Low,Low
+618.jpg,Not Healed,Not Healed,Medium,Medium
+62.jpg,Healed,Healed,Low,Low
+622.jpg,Not Healed,Not Healed,Low,Low
+623.jpg,Healed,Healed,Low,Low
+624.jpg,Not Healed,Not Healed,Low,Low
+625.jpg,Not Healed,Not Healed,Low,Low
+626.jpg,Healed,Not Healed,Low,Low
+627.jpg,Not Healed,Not Healed,Medium,Low
+628.jpg,Healed,Healed,Low,Low
+629.jpg,Healed,Healed,Low,Low
+63.jpg,Healed,Healed,Low,Low
+630.jpg,Not Healed,Not Healed,Medium,Medium
+631.jpg,Healed,Healed,Low,Low
+634.jpg,Healed,Healed,Low,Low
+637.jpg,Not Healed,Not Healed,Medium,Medium
+639.jpg,Not Healed,Not Healed,Low,Low
+64.jpg,Healed,Not Healed,Low,Low
+640.jpg,Healed,Healed,Low,Low
+641.jpg,Healed,Healed,Low,Low
+642.jpg,Healed,Healed,Low,Low
+643.jpg,Not Healed,Not Healed,Low,Low
+646.jpg,Not Healed,Not Healed,Medium,Medium
+648.jpg,Healed,Healed,Low,Low
+650.jpg,Healed,Healed,Low,Low
+652.jpg,Not Healed,Not Healed,Low,Low
+653.jpg,Healed,Healed,Low,Low
+654.jpg,Not Healed,Not Healed,Low,Low
+656.jpg,Not Healed,Not Healed,High,High
+657.jpg,Healed,Not Healed,Low,Medium
+658.jpg,Not Healed,Not Healed,Medium,Medium
+659.jpg,Healed,Healed,Low,Low
+66.jpg,Not Healed,Healed,Medium,Low
+660.jpg,Healed,Healed,Low,Low
+661.jpg,Not Healed,Not Healed,Medium,Medium
+663.jpg,Healed,Healed,Low,Low
+665.jpg,Not Healed,Not Healed,Medium,Medium
+666.jpg,Healed,Healed,Low,Low
+667.jpg,Healed,Healed,Low,Low
+668.jpg,Healed,Healed,Low,Low
+669.jpg,Not Healed,Not Healed,High,High
+67.jpg,Healed,Healed,Low,Low
+670.jpg,Healed,Healed,Low,Low
+671.jpg,Not Healed,Not Healed,Low,Low
+674.jpg,Healed,Not Healed,Low,Low
+675.jpg,Healed,Healed,Low,Low
+677.jpg,Not Healed,Not Healed,Low,Low
+678.jpg,Not Healed,Not Healed,Low,Low
+679.jpg,Healed,Not Healed,Low,Low
+68.jpg,Healed,Not Healed,Low,Low
+680.jpg,Healed,Healed,Low,Low
+681.jpg,Healed,Healed,Low,Low
+682.jpg,Healed,Healed,Low,Low
+684.jpg,Not Healed,Not Healed,Low,Low
+685.jpg,Not Healed,Not Healed,Low,Low
+686.jpg,Healed,Healed,Low,Low
+687.jpg,Healed,Healed,Low,Low
+688.jpg,Healed,Healed,Low,Low
+689.jpg,Not Healed,Not Healed,Low,Low
+69.jpg,Healed,Healed,Low,Low
+692.jpg,Not Healed,Not Healed,Low,Low
+694.jpg,Healed,Healed,Low,Low
+696.jpg,Healed,Healed,Low,Low
+698.jpg,Healed,Healed,Low,Low
+70.jpg,Healed,Healed,Low,Low
+700.jpg,Not Healed,Not Healed,Low,Low
+702.jpg,Healed,Healed,Low,Low
+703.jpg,Not Healed,Not Healed,Low,Low
+704.jpg,Not Healed,Not Healed,Low,Low
+705.jpg,Not Healed,Healed,Low,Low
+707.jpg,Healed,Healed,Low,Low
+709.jpg,Not Healed,Healed,Low,Low
+71.jpg,Healed,Healed,Low,Low
+711.jpg,Healed,Healed,Low,Low
+712.jpg,Healed,Healed,Low,Low
+713.jpg,Healed,Healed,Low,Low
+714.jpg,Healed,Healed,Low,Low
+715.jpg,Not Healed,Healed,Low,Low
+717.jpg,Not Healed,Healed,Low,Low
+718.jpg,Healed,Healed,Low,Low
+72.jpg,Healed,Healed,Low,Low
+720.jpg,Healed,Healed,Low,Low
+723.jpg,Not Healed,Not Healed,Low,Low
+725.jpg,Healed,Not Healed,Low,Low
+730.jpg,Not Healed,Not Healed,Low,Low
+731.jpg,Healed,Healed,Low,Low
+733.jpg,Healed,Healed,Low,Low
+734.jpg,Healed,Not Healed,Low,Low
+735.jpg,Healed,Healed,Low,Low
+736.jpg,Not Healed,Healed,Low,Low
+737.jpg,Not Healed,Not Healed,Low,Low
+739.jpg,Not Healed,Not Healed,Low,Low
+74.jpg,Healed,Healed,Low,Low
+740.jpg,Not Healed,Not Healed,Medium,Medium
+743.jpg,Healed,Healed,Low,Low
+744.jpg,Healed,Healed,Low,Low
+749.jpg,Healed,Healed,Low,Low
+75.jpg,Healed,Not Healed,Low,Medium
+750.jpg,Healed,Healed,Low,Low
+752.jpg,Not Healed,Not Healed,Low,Low
+753.jpg,Healed,Healed,Low,Low
+755.jpg,Not Healed,Not Healed,Low,Low
+758.jpg,Healed,Healed,Low,Low
+76.jpg,Not Healed,Not Healed,Low,Low
+760.jpg,Healed,Healed,Low,Low
+761.jpg,Not Healed,Not Healed,Low,Low
+762.jpg,Not Healed,Not Healed,Low,Low
+763.jpg,Healed,Healed,Low,Low
+764.jpg,Healed,Healed,Low,Low
+767.jpg,Not Healed,Not Healed,Low,Medium
+77.jpg,Healed,Healed,Low,Low
+770.jpg,Healed,Healed,Low,Low
+771.jpg,Not Healed,Not Healed,Low,Low
+773.jpg,Not Healed,Not Healed,Low,Low
+774.jpg,Healed,Healed,Low,Low
+776.jpg,Healed,Healed,Low,Low
+777.jpg,Not Healed,Not Healed,Medium,Low
+778.jpg,Healed,Healed,Low,Low
+779.jpg,Not Healed,Not Healed,Low,Low
+78.jpg,Healed,Healed,Low,Low
+783.jpg,Healed,Healed,Low,Low
+784.jpg,Healed,Healed,Low,Low
+785.jpg,Healed,Healed,Low,Low
+786.jpg,Not Healed,Healed,Low,Low
+787.jpg,Not Healed,Healed,Low,Low
+788.jpg,Not Healed,Healed,Low,Low
+789.jpg,Healed,Healed,Low,Low
+79.jpg,Healed,Not Healed,Low,Low
+792.jpg,Not Healed,Not Healed,Low,Low
+793.jpg,Not Healed,Not Healed,Low,Low
+794.jpg,Healed,Healed,Low,Low
+795.jpg,Healed,Healed,Low,Low
+796.jpg,Not Healed,Not Healed,Low,Low
+797.jpg,Healed,Healed,Low,Low
+798.jpg,Healed,Healed,Low,Low
+799.jpg,Healed,Healed,Low,Low
+8.jpg,Healed,Healed,Low,Low
+80.jpg,Healed,Healed,Low,Low
+802.jpg,Healed,Healed,Low,Low
+803.jpg,Healed,Healed,Low,Low
+804.jpg,Not Healed,Not Healed,Low,Low
+805.jpg,Not Healed,Not Healed,Low,Low
+806.jpg,Healed,Healed,Low,Low
+807.jpg,Healed,Not Healed,Low,Low
+808.jpg,Healed,Healed,Low,Low
+810.jpg,Not Healed,Healed,Low,Low
+811.jpg,Healed,Healed,Low,Low
+812.jpg,Healed,Healed,Low,Low
+813.jpg,Healed,Healed,Low,Low
+814.jpg,Healed,Healed,Low,Low
+817.jpg,Healed,Healed,Low,Low
+82.jpg,Healed,Healed,Low,Low
+820.jpg,Not Healed,Not Healed,Low,Low
+825.jpg,Not Healed,Not Healed,Low,Low
+827.jpg,Healed,Healed,Low,Low
+828.jpg,Healed,Healed,Low,Low
+829.jpg,Healed,Healed,Low,Low
+83.jpg,Healed,Healed,Low,Low
+835.jpg,Healed,Healed,Low,Low
+837.jpg,Healed,Healed,Low,Low
+838.jpg,Healed,Healed,Low,Low
+839.jpg,Healed,Healed,Low,Low
+84.jpg,Healed,Healed,Low,Low
+840.jpg,Healed,Healed,Low,Low
+841.jpg,Healed,Healed,Low,Low
+842.jpg,Healed,Not Healed,Low,Low
+843.jpg,Not Healed,Not Healed,Medium,Medium
+845.jpg,Not Healed,Not Healed,Low,Low
+846.jpg,Healed,Healed,Low,Low
+848.jpg,Healed,Healed,Low,Low
+849.jpg,Healed,Healed,Low,Low
+85.jpg,Healed,Healed,Low,Low
+850.jpg,Healed,Healed,Low,Low
+852.jpg,Healed,Healed,Low,Low
+853.jpg,Not Healed,Not Healed,Low,Low
+857.jpg,Healed,Healed,Low,Low
+858.jpg,Healed,Healed,Low,Low
+86.jpg,Not Healed,Not Healed,Low,Low
+862.jpg,Healed,Healed,Low,Low
+863.jpg,Not Healed,Not Healed,Low,Low
+867.jpg,Not Healed,Not Healed,Medium,Medium
+868.jpg,Not Healed,Not Healed,Medium,Medium
+87.jpg,Not Healed,Healed,Medium,Low
+872.jpg,Healed,Healed,Low,Low
+874.jpg,Not Healed,Not Healed,Low,Low
+876.jpg,Healed,Healed,Low,Low
+878.jpg,Healed,Healed,Low,Low
+879.jpg,Not Healed,Not Healed,Low,Low
+88.jpg,Not Healed,Not Healed,Medium,Medium
+880.jpg,Not Healed,Not Healed,Low,Low
+881.jpg,Healed,Healed,Low,Low
+882.jpg,Not Healed,Not Healed,Low,Low
+884.jpg,Healed,Not Healed,Low,High
+887.jpg,Healed,Healed,Low,Low
+888.jpg,Healed,Healed,Low,Low
+889.jpg,Not Healed,Not Healed,Medium,Medium
+89.jpg,Healed,Healed,Low,Low
+890.jpg,Healed,Not Healed,Low,Low
+891.jpg,Not Healed,Not Healed,Medium,Medium
+892.jpg,Not Healed,Not Healed,Low,Low
+893.jpg,Healed,Healed,Low,Low
+895.jpg,Not Healed,Not Healed,Low,Low
+896.jpg,Not Healed,Not Healed,Medium,Medium
+897.jpg,Not Healed,Not Healed,Medium,Medium
+898.jpg,Healed,Healed,Low,Low
+899.jpg,Not Healed,Not Healed,Medium,Low
+90.jpg,Not Healed,Healed,Medium,Low
+900.jpg,Healed,Healed,Low,Low
+902.jpg,Not Healed,Not Healed,Medium,Medium
+904.jpg,Not Healed,Not Healed,Low,Low
+906.jpg,Not Healed,Not Healed,Medium,Medium
+907.jpg,Healed,Not Healed,Low,Low
+91.jpg,Healed,Healed,Low,Low
+911.jpg,Not Healed,Not Healed,Low,Low
+913.jpg,Not Healed,Not Healed,Low,Low
+916.jpg,Not Healed,Not Healed,Low,Low
+918.jpg,Not Healed,Not Healed,High,High
+919.jpg,Not Healed,Not Healed,Low,Low
+92.jpg,Healed,Healed,Low,Low
+920.jpg,Not Healed,Not Healed,Medium,Medium
+921.jpg,Healed,Healed,Low,Low
+922.jpg,Not Healed,Not Healed,Low,Low
+924.jpg,Not Healed,Not Healed,Low,Low
+926.jpg,Healed,Healed,Low,Low
+927.jpg,Healed,Healed,Low,Low
+928.jpg,Not Healed,Not Healed,Low,Low
+929.jpg,Not Healed,Not Healed,Low,Low
+93.jpg,Healed,Healed,Low,Low
+930.jpg,Healed,Healed,Low,Low
+931.jpg,Not Healed,Not Healed,Medium,Medium
+933.jpg,Not Healed,Not Healed,Low,Medium
+936.jpg,Not Healed,Not Healed,Medium,Medium
+937.jpg,Not Healed,Not Healed,High,Medium
+938.jpg,Not Healed,Not Healed,Low,Low
+939.jpg,Not Healed,Not Healed,Medium,Medium
+94.jpg,Healed,Healed,Low,Low
+940.jpg,Healed,Healed,Low,Low
+941.jpg,Not Healed,Not Healed,High,High
+942.jpg,Not Healed,Healed,Medium,Low
+943.jpg,Not Healed,Not Healed,High,Medium
+944.jpg,Healed,Healed,Low,Low
+945.jpg,Healed,Not Healed,Low,Low
+946.jpg,Not Healed,Not Healed,Low,Low
+95.jpg,Not Healed,Not Healed,Medium,Low
+950.jpg,Not Healed,Not Healed,Medium,Medium
+953.jpg,Not Healed,Not Healed,Medium,Medium
+955.jpg,Not Healed,Not Healed,High,High
+956.jpg,Not Healed,Not Healed,High,High
+958.jpg,Not Healed,Not Healed,Low,Low
+959.jpg,Healed,Healed,Low,Low
+961.jpg,Not Healed,Not Healed,Medium,Medium
+962.jpg,Not Healed,Not Healed,Medium,Medium
+963.jpg,Healed,Healed,Low,Low
+964.jpg,Not Healed,Not Healed,High,High
+966.jpg,Not Healed,Not Healed,Low,Low
+967.jpg,Not Healed,Not Healed,High,High
+968.jpg,Not Healed,Not Healed,High,High
+969.jpg,Not Healed,Not Healed,Medium,Medium
+97.jpg,Healed,Healed,Low,Low
+970.jpg,Healed,Healed,Low,Low
+971.jpg,Not Healed,Healed,Medium,Low
+973.jpg,Not Healed,Not Healed,High,Medium
+974.jpg,Healed,Not Healed,Low,Medium
+976.jpg,Healed,Not Healed,Low,Medium
+978.jpg,Not Healed,Not Healed,High,High
+979.jpg,Healed,Not Healed,Low,Low
+98.jpg,Healed,Healed,Low,Low
+983.jpg,Not Healed,Not Healed,Low,Medium
+984.jpg,Healed,Healed,Low,Low
+985.jpg,Not Healed,Not Healed,Medium,Low
+987.jpg,Healed,Healed,Low,Low
+988.jpg,Not Healed,Not Healed,Medium,Low
+989.jpg,Not Healed,Not Healed,Low,Low
+99.jpg,Healed,Healed,Low,Low
+990.jpg,Not Healed,Not Healed,Low,Low
+993.jpg,Healed,Healed,Low,Low
+994.jpg,Not Healed,Not Healed,Low,Low
+995.jpg,Not Healed,Not Healed,Medium,Medium
+996.jpg,Not Healed,Not Healed,Medium,Medium
+998.jpg,Not Healed,Not Healed,Low,Low
+999.jpg,Not Healed,Not Healed,Medium,Medium
