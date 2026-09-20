@@ -1392,6 +1392,13 @@ def render_case_workspace() -> None:
                 try:
                     live_res = _process_image(img_bytes, uploaded_file.name)
                     st.success("Analysis generated successfully!")
+                    
+                    from aws_s3 import upload_to_s3
+                    if upload_to_s3(img_bytes, uploaded_file.name):
+                        st.info("☁️ Storage: AWS S3")
+                    else:
+                        st.info("💾 Storage: Local/Streamlit")
+                        
                     render_existing_ai_analysis(live_res, image_bytes=img_bytes, show_research_expander=False)
                 except Exception as exc:
                     import traceback
@@ -1791,6 +1798,15 @@ def render_patient_portal() -> None:
                                 str(photo_date), p_pain, p_symptoms, p_comments, ai_res
                             )
                             st.success("Your photo has been uploaded and queued for clinician review!")
+                            
+                            from aws_s3 import upload_to_s3
+                            if upload_to_s3(img_b, uploaded_photo.name):
+                                st.info("☁️ Storage: AWS S3")
+                            else:
+                                st.info("💾 Storage: Local/Streamlit")
+                            import time
+                            time.sleep(1.5)
+                            
                             st.rerun()
                         except Exception as exc:
                             import traceback

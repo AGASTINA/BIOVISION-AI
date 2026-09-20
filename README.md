@@ -11,15 +11,15 @@ An AI-assisted clinical decision support system for chronic wound care, integrat
 
 ## 🏗️ Architecture
 
-```
+```text
 ┌─────────────────────────────────────────────────────────────────┐
 │                     BioVision AI Platform                       │
 ├─────────────────────────────────────────────────────────────────┤
 │  Frontend:  Streamlit (Python)                                  │
 │  Database:  SQLite (biovision.db)                               │
 │  ML Stack:  YOLO11n-Seg + EfficientNet-B3 + XGBoost + SHAP     │
-│  Hosting:   AWS EC2 (t3.medium, Ubuntu 24.04 LTS)              │
-│  Process:   systemd (auto-restart, persistent)                  │
+│  Storage:   AWS S3 (Image & Report storage via boto3)          │
+│  Hosting:   AWS EC2 (t3.medium) or Streamlit Cloud             │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
