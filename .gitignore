@@ -1,8 +1,23 @@
+# Python
 .venv/
 __pycache__/
 *.pyc
+*.pyo
 .DS_Store
 *.log
 
+# Large files excluded from repo
 results.zip
 data/SurgWound/*.json
+
+# Deployment secrets - NEVER commit
+.env
+*.pem
+*.key
+aws_credentials*
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
