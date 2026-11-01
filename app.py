@@ -1396,11 +1396,21 @@ def render_case_workspace() -> None:
         st.caption("This view displays the accepted existing AI analysis pipeline, visualizations, and explainability models.")
 
         # Allow clinician to switch between visits or upload a new image
-        visit_options = {f"{v['week_label']} ({v['visit_date']})": v for v in visits}
+        # Guarantee unique keys by including visit ID
+        visit_options = {f"{v['week_label']} ({v['visit_date']}) [{v['id']}]": v for v in visits}
+        options_list = list(visit_options.keys())
+        default_idx = len(options_list) - 1 if options_list else 0
+        if "selected_visit_id" in st.session_state:
+            for idx, v in enumerate(visit_options.values()):
+                if v["id"] == st.session_state["selected_visit_id"]:
+                    default_idx = idx
+                    break
+        default_idx = max(0, min(default_idx, len(options_list) - 1)) if options_list else 0
+
         col_sel, col_up = st.columns([2, 2])
         with col_sel:
-            chosen_label = st.selectbox("Select Visit to Inspect:", list(visit_options.keys()), index=len(visits)-1)
-            active_visit = visit_options[chosen_label]
+            chosen_label = st.selectbox("Select Visit to Inspect:", options_list, index=default_idx) if options_list else None
+            active_visit = visit_options[chosen_label] if chosen_label else (visits[-1] if visits else None)
 
         with col_up:
             uploaded_file = st.file_uploader("Or Upload New Wound Image for Live AI Analysis", type=["jpg", "jpeg", "png"], key="clinician_uploader")
