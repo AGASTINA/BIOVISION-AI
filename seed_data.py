@@ -152,55 +152,47 @@ def seed_database():
         ))
 
     # --- Seed Visits for David Miller (P-00042, Diabetic Foot Wound W-0007) ---
-    print("Seeding visits for David Miller...")
-    # All visits use fusc_0048.png — same wound photographed at each clinic visit.
-    # The wound area progression is captured in the AI analysis records.
-    insert_visit(
-        "V-DAVID-01", "W-0007", "P-00042", "2026-05-12", "Week 1 — Initial Presentation", "fusc_0048.png", "Clinician Visit",
+    print("Seeding exactly 10 distinct visits for David Miller...")
+    # 10 weeks with progressing, distinct wound photos and clinical trajectory:
+    insert_visit("V-DAVID-01", "W-0007", "P-00042", "2026-05-12", "Week 1 — Initial Presentation", "fusc_0096.png", "Clinician Visit",
         {"wound_bed": "Granulation 75%, Slough 25%", "periwound": "Mild maceration", "pain": 3, "depth": "Partial thickness 1.5mm"},
-        {"review_status": "Reviewed", "overall_status": "Stable", "confirmation": "Baseline wound established", "notes": "Initial wound baseline documented. Offloading footwear prescribed."}
-    )
-    insert_visit(
-        "V-DAVID-02", "W-0007", "P-00042", "2026-05-26", "Week 2 — Early Monitoring", "fusc_0048.png", "Clinician Visit",
-        {"wound_bed": "Granulation 70%, Slough 30%", "periwound": "Intact, minimal peri-wound erythema", "pain": 4, "depth": "Partial thickness 2.0mm"},
-        {"review_status": "Reviewed", "overall_status": "Stable", "confirmation": "Confirmed offloading compliance", "notes": "Patient reports minor discomfort after walking. Reinforced offloading."}
-    )
-    insert_visit(
-        "V-DAVID-03", "W-0007", "P-00042", "2026-06-09", "Week 4 — Active Treatment", "fusc_0048.png", "Clinician Visit",
+        {"review_status": "Reviewed", "overall_status": "Stable", "confirmation": "Baseline wound established", "notes": "Initial wound baseline documented. Offloading footwear prescribed."})
+
+    insert_visit("V-DAVID-02", "W-0007", "P-00042", "2026-05-26", "Week 2 — Early Monitoring", "fusc_0061.png", "Clinician Visit",
+        {"wound_bed": "Granulation 70%, Slough 30%", "periwound": "Intact edges", "pain": 4, "depth": "Partial thickness 2.0mm"},
+        {"review_status": "Reviewed", "overall_status": "Stable", "confirmation": "Confirmed offloading compliance", "notes": "Patient reports minor discomfort after walking. Reinforced offloading."})
+
+    insert_visit("V-DAVID-03", "W-0007", "P-00042", "2026-06-09", "Week 3 — Active Treatment", "fusc_0032.png", "Clinician Visit",
         {"wound_bed": "Granulation 80%, Slough 20%", "periwound": "Clean, healthy margin", "pain": 3, "depth": "Partial thickness 1.8mm"},
-        {"review_status": "Reviewed", "overall_status": "Improving", "confirmation": "Satisfactory wound bed", "notes": "Epithelialization advancing along lateral edge."}
-    )
-    insert_visit(
-        "V-DAVID-04", "W-0007", "P-00042", "2026-06-23", "Week 6 — Plateau Phase", "fusc_0048.png", "Clinician Visit",
-        {"wound_bed": "Granulation 65%, Slough 35%", "periwound": "Mild peri-wound warmth", "pain": 5, "depth": "Partial thickness 2.2mm"},
-        {"review_status": "Reviewed", "overall_status": "Stable", "confirmation": "Continued surveillance required", "notes": "Area slightly expanded. Swab culture negative."}
-    )
-    # Visit 5: Current Visit (Needs attention! +23.1% area increase)
-    insert_visit(
-        "V-DAVID-05", "W-0007", "P-00042", "2026-09-17", "Week 18 — Clinical Concern ⚠️", "fusc_0048.png", "Clinician Visit",
-        {
-            "wound_bed": "Granulation 55%, Slough 45%, friable base",
-            "periwound": "Marked periwound erythema, local warmth extending 1.5cm",
-            "exudate_amount": "Heavy",
-            "exudate_type": "Purulent / Serosanguinous",
-            "pain": 6,
-            "infection_signs": "Increased peri-wound redness, local heat, elevated pain score",
-            "depth": "Partial to full thickness 3.0mm",
-            "undermining": "Mild undermining at 3 o'clock position (4mm)",
-            "dressing": "Antimicrobial silver foam dressing, total contact cast evaluated"
-        },
-        {
-            "review_status": "Review required",
-            "overall_status": "Worsening",
-            "confirmation": "Pending clinician confirmation - marked area enlargement noted",
-            "notes": "Wound area increased by +23.1% over previous assessment. Periwound erythema and increased exudate indicate high clinical concern. Immediate clinician review required.",
-            "follow_up": "2026-09-20",
-            "reviewed_by": "Pending Review",
-            "review_date": ""
-        }
-    )
+        {"review_status": "Reviewed", "overall_status": "Improving", "confirmation": "Satisfactory wound bed", "notes": "Epithelialization advancing along lateral edge."})
 
+    insert_visit("V-DAVID-04", "W-0007", "P-00042", "2026-06-23", "Week 4 — Treatment Check", "fusc_0106.png", "Clinician Visit",
+        {"wound_bed": "Granulation 65%, Slough 35%", "periwound": "Mild peri-wound warmth", "pain": 4, "depth": "Partial thickness 2.0mm"},
+        {"review_status": "Reviewed", "overall_status": "Stable", "confirmation": "Continued surveillance required", "notes": "Area slightly expanded. Swab culture negative."})
 
+    insert_visit("V-DAVID-05", "W-0007", "P-00042", "2026-07-07", "Week 5 — Plateau Phase", "fusc_0048.png", "Clinician Visit",
+        {"wound_bed": "Granulation 70%, Slough 30%", "periwound": "Intact edges", "pain": 3, "depth": "Partial thickness 1.9mm"},
+        {"review_status": "Reviewed", "overall_status": "Stable", "confirmation": "Plateau observed", "notes": "Dressing refreshed."})
+
+    insert_visit("V-DAVID-06", "W-0007", "P-00042", "2026-07-21", "Week 6 (Patient Upload)", "fusc_0096.png", "Patient Upload",
+        {"wound_bed": "Granulation 75%, Slough 25%", "periwound": "Clean", "pain": 2, "depth": "Partial thickness 1.7mm"},
+        {"review_status": "Reviewed", "overall_status": "Improving", "confirmation": "Good healing", "notes": "Home photo verified."})
+
+    insert_visit("V-DAVID-07", "W-0007", "P-00042", "2026-08-04", "Week 7 (Patient Upload)", "fusc_0061.png", "Patient Upload",
+        {"wound_bed": "Granulation 80%, Slough 20%", "periwound": "Healthy", "pain": 2, "depth": "Partial thickness 1.5mm"},
+        {"review_status": "Reviewed", "overall_status": "Improving", "confirmation": "Continuing reduction", "notes": "Wound area contracting."})
+
+    insert_visit("V-DAVID-08", "W-0007", "P-00042", "2026-08-18", "Week 8 (Patient Upload)", "fusc_0032.png", "Patient Upload",
+        {"wound_bed": "Granulation 85%, Slough 15%", "periwound": "Intact", "pain": 1, "depth": "Superficial 1.2mm"},
+        {"review_status": "Reviewed", "overall_status": "Improving", "confirmation": "Epithelial coverage >80%", "notes": "Marked improvement."})
+
+    insert_visit("V-DAVID-09", "W-0007", "P-00042", "2026-09-01", "Week 9 (Patient Upload)", "fusc_0106.png", "Patient Upload",
+        {"wound_bed": "Granulation 90%, Slough 10%", "periwound": "Normal", "pain": 1, "depth": "Superficial 0.8mm"},
+        {"review_status": "Reviewed", "overall_status": "Improving", "confirmation": "Near epithelialization", "notes": "Marginal contraction."})
+
+    insert_visit("V-DAVID-10", "W-0007", "P-00042", "2026-09-17", "Week 10 — Clinical Concern ⚠️", "fusc_0048.png", "Clinician Visit",
+        {"wound_bed": "Granulation 55%, Slough 45%, friable base", "periwound": "Marked periwound erythema", "exudate_amount": "Heavy", "exudate_type": "Purulent", "pain": 6, "depth": "Partial to full 3.0mm"},
+        {"review_status": "Review required", "overall_status": "Worsening", "confirmation": "Pending review", "notes": "Acute enlargement."})
     # --- Seed Visits for Radhika Sharma (P-00018, Venous Leg Ulcer W-0003) ---
     print("Seeding visits for Radhika Sharma...")
     insert_visit(

@@ -24,6 +24,24 @@ SHAP_ROOT = PROJECT_ROOT / "outputs" / "SurgWound" / "shap"
 STORAGE_PATH = PROJECT_ROOT / "data" / "storage"
 TEST_IMG_DIR  = PROJECT_ROOT / "test_images"
 HERO_IMG_PATH = STORAGE_PATH / "hero.jpg"
+
+def resolve_image_path(img_path_str: Optional[str]) -> Optional[Path]:
+    if not img_path_str:
+        return None
+    p = Path(img_path_str)
+    if p.exists():
+        return p
+    fname = Path(str(img_path_str).replace("\\", "/")).name
+    stem = fname.split("_", 2)[-1] if "_" in fname else fname
+    for cand in [
+        STORAGE_PATH / fname,
+        TEST_IMG_DIR / fname,
+        TEST_IMG_DIR / stem,
+        TEST_IMG_DIR / "fusc_0048.png",
+    ]:
+        if cand and cand.exists():
+            return cand
+    return None
 FEATURE_COUNT = 1563
 HANDCRAFTED_FEATURES = [
     "rgb_mean_r", "rgb_mean_g", "rgb_mean_b", "rgb_std_r", "rgb_std_g", "rgb_std_b",
@@ -456,13 +474,14 @@ def render_existing_ai_analysis(result: dict[str, object], image_bytes: Optional
 # ==============================================================================
 
 def visit_to_ai_result(visit: Dict[str, Any]) -> Dict[str, Any]:
-    orig_path = Path(visit["image_path"])
+    orig_path = resolve_image_path(visit.get("image_path"))
+    if not orig_path: orig_path = Path(visit.get("image_path", ""))
     img_bytes = orig_path.read_bytes() if orig_path.exists() else None
     
     orig_img = cv2.imread(str(orig_path), cv2.IMREAD_COLOR) if orig_path.exists() else None
     orig_rgb = cv2.cvtColor(orig_img, cv2.COLOR_BGR2RGB) if orig_img is not None else np.zeros((200, 200, 3), dtype=np.uint8)
 
-    mask_path = Path(visit["mask_path"]) if visit.get("mask_path") else None
+    mask_path = resolve_image_path(visit.get("mask_path"))
     mask = cv2.imread(str(mask_path), cv2.IMREAD_GRAYSCALE) if mask_path and mask_path.exists() else np.zeros(orig_rgb.shape[:2], dtype=np.uint8)
 
     class DummySeg:
@@ -1448,35 +1467,33 @@ def render_case_workspace() -> None:
     # --------------------------------------------------------------------------
     with tabs[3]:
         st.subheader("Wound Timeline (Longitudinal Visit History)")
-        st.caption("Chronological record of every real clinic visit and patient photo. Click any visit to inspect its detailed AI analysis.")
+        st.caption("Chronological record of clinic visits and patient photos. Capped strictly at 10 weeks.")
 
-        cols = st.columns(len(visits))
-        for idx, (v, c) in enumerate(zip(visits, cols)):
-            with c:
-                st.markdown(f"**{v['week_label']}**<br><span style='color: #8A9BA8; font-size: 0.85rem;'>{v['visit_date']}</span>", unsafe_allow_html=True)
-                img_path = v["image_path"]
-                if Path(img_path).exists():
-                    st.image(img_path, use_container_width=True)
-                else:
-                    # Fallback: look for any copy of the same filename in storage
-                    fname = Path(img_path).name
-                    fallback = STORAGE_PATH / fname
-                    alt = TEST_IMG_DIR / "fusc_0048.png"
-                    if fallback.exists():
-                        st.image(str(fallback), use_container_width=True)
-                    elif alt.exists():
-                        st.image(str(alt), use_container_width=True)
+        # Cap strictly at 10 weeks
+        timeline_visits = visits[-10:] if len(visits) > 10 else visits
+
+        # Render in clean rows of 5 cards so images and text fit cleanly
+        CHUNK_SIZE = 5
+        for row_start in range(0, len(timeline_visits), CHUNK_SIZE):
+            chunk = timeline_visits[row_start : row_start + CHUNK_SIZE]
+            cols = st.columns(5)
+            for idx, (v, c) in enumerate(zip(chunk, cols)):
+                with c:
+                    st.markdown(f"**{v['week_label']}**<br><span style='color: #8A9BA8; font-size: 0.85rem;'>{v['visit_date']}</span>", unsafe_allow_html=True)
+                    img_file = resolve_image_path(v.get("image_path", ""))
+                    if img_file:
+                        st.image(str(img_file), use_container_width=True)
                     else:
                         st.caption("Photo pending")
-                
-                v_area = v.get("wound_area")
-                area_lbl = f"{int(round(v_area)):,} px" if v_area is not None else "N/A"
-                st.caption(f"Area: **{area_lbl}**")
-                st.caption(f"Status: **{v.get('healing_class', 'N/A')}**")
-                
-                if st.button("Inspect AI", key=f"insp_{v['id']}"):
-                    st.session_state["selected_visit_id"] = v["id"]
-                    st.info(f"Loaded {v['week_label']} in AI Wound Analysis tab.")
+                    
+                    v_area = v.get("wound_area")
+                    area_lbl = f"{int(round(v_area)):,} px" if v_area is not None else "N/A"
+                    st.caption(f"Area: **{area_lbl}**")
+                    st.caption(f"Status: **{v.get('healing_class', 'N/A')}**")
+                    
+                    if st.button("Inspect AI", key=f"insp_{v['id']}"):
+                        st.session_state["selected_visit_id"] = v["id"]
+                        st.info(f"Loaded {v['week_label']} in AI Wound Analysis tab.")
 
     # --------------------------------------------------------------------------
     # TAB 5: PREVIOUS VS CURRENT
@@ -1489,8 +1506,9 @@ def render_case_workspace() -> None:
             col_prev, col_curr = st.columns(2)
             with col_prev:
                 st.markdown(f"### Previous: {previous_visit['week_label']} ({previous_visit['visit_date']})")
-                if Path(previous_visit["image_path"]).exists():
-                    st.image(previous_visit["image_path"], use_container_width=True, caption="Previous Photograph")
+                prev_img = resolve_image_path(previous_visit.get("image_path"))
+                if prev_img:
+                    st.image(str(prev_img), use_container_width=True, caption="Previous Photograph")
                 p_area = previous_visit.get("wound_area")
                 st.metric("Previous Wound Area", f"{int(round(p_area)):,} px" if p_area is not None else "N/A")
                 st.markdown(f"**Healing Status:** {previous_visit.get('healing_class', 'N/A')}")
@@ -1500,8 +1518,9 @@ def render_case_workspace() -> None:
 
             with col_curr:
                 st.markdown(f"### Current: {latest_visit['week_label']} ({latest_visit['visit_date']})")
-                if Path(latest_visit["image_path"]).exists():
-                    st.image(latest_visit["image_path"], use_container_width=True, caption="Current Photograph")
+                curr_img = resolve_image_path(latest_visit.get("image_path"))
+                if curr_img:
+                    st.image(str(curr_img), use_container_width=True, caption="Current Photograph")
                 c_area = latest_visit.get("wound_area")
                 st.metric("Current Wound Area", f"{int(round(c_area)):,} px" if c_area is not None else "N/A", delta=f"{area_change_str}", delta_color="inverse" if area_change_pct > 0 else "normal")
                 st.markdown(f"**Healing Status:** {latest_visit.get('healing_class', 'N/A')}")
@@ -1758,10 +1777,11 @@ def render_patient_portal() -> None:
     # Patient Tab 1: Current Status
     with p_tabs[0]:
         st.subheader("Current Wound Status")
-        if latest_visit and Path(latest_visit["image_path"]).exists():
+        latest_img = resolve_image_path(latest_visit.get("image_path")) if latest_visit else None
+        if latest_img:
             c_img, c_info = st.columns([1, 1])
             with c_img:
-                st.image(latest_visit["image_path"], caption=f"Latest Photo ({latest_visit['visit_date']})", use_container_width=True)
+                st.image(str(latest_img), caption=f"Latest Photo ({latest_visit['visit_date']})", use_container_width=True)
             with c_info:
                 st.markdown(f"### Assessment: {latest_visit['week_label']}")
                 v_area = latest_visit.get("wound_area")

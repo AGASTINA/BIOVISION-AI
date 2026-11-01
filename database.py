@@ -397,7 +397,17 @@ def add_patient_upload_visit(
     # Count existing visits for week label
     cur.execute("SELECT COUNT(*) FROM visits WHERE wound_id = ?", (wound_id,))
     count = cur.fetchone()[0]
-    week_label = f"Week {count + 1} (Patient Upload)"
+    week_label = f"Week {min(count + 1, 10)} (Patient Upload)"
+
+    # Cap total visits at 10 so every upload strictly fits within 10 weeks
+    cur.execute("SELECT id FROM visits WHERE wound_id = ? ORDER BY visit_date ASC", (wound_id,))
+    all_v_ids = [r[0] for r in cur.fetchall()]
+    if len(all_v_ids) >= 10:
+        del_id = all_v_ids[1] if len(all_v_ids) > 1 else all_v_ids[0]
+        cur.execute("DELETE FROM ai_analyses WHERE visit_id = ?", (del_id,))
+        cur.execute("DELETE FROM clinical_assessments WHERE visit_id = ?", (del_id,))
+        cur.execute("DELETE FROM clinician_reviews WHERE visit_id = ?", (del_id,))
+        cur.execute("DELETE FROM visits WHERE id = ?", (del_id,))
 
     now_str = datetime.now().isoformat()
     cur.execute("""
